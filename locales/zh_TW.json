@@ -1,0 +1,492 @@
+{
+  "_language_name": "繁體中文",
+  "_language_emoji": "🇹🇼",
+  
+  "common": {
+    "error": "❌ 錯誤",
+    "success": "✅ 成功",
+    "warning": "⚠️ 警告",
+    "loading": "⏳ 載入中...",
+    "no_permission": "你沒有權限使用此指令。",
+    "bot_no_permission": "機器人沒有足夠的權限。",
+    "not_in_voice": "你需要先加入語音頻道！",
+    "bot_not_in_voice": "機器人不在任何語音頻道中。",
+    "same_voice": "你必須與機器人在同一個語音頻道！",
+    "nothing_playing": "目前沒有正在播放的音樂。",
+    "invalid_input": "無效的輸入。",
+    "command_cooldown": "指令冷卻中，請等待 {time} 秒。"
+  },
+  
+  "language": {
+    "title": "🌐 語言設定",
+    "current": "目前語言：**{language}**",
+    "select_prompt": "請選擇你偏好的語言：",
+    "changed": "✅ 語言已變更為 **{language}**",
+    "guild_changed": "✅ 伺服器語言已變更為 **{language}**",
+    "invalid": "❌ 無效的語言代碼。可用語言：{languages}",
+    "user_setting": "👤 個人語言設定",
+    "guild_setting": "🏠 伺服器語言設定",
+    "available": "可用語言",
+    "switch_to": "切換至 {language}",
+    "select_placeholder": "選擇你的語言 / Select your language..."
+  },
+  
+  "music": {
+    "blacklisted": {
+      "title": "❌ 您已被黑名單",
+      "description": "您無法使用此音樂功能",
+      "reason": "原因",
+      "footer": "如有疑問，請聯繫伺服器管理員"
+    },
+    
+    "queue_ended": {
+      "title": "🎵 播放完畢",
+      "description": "所有歌曲播放完畢，機器人已離開語音頻道。",
+      "footer": "🔧 感謝使用 Ghost Music 音樂機器人"
+    },
+    
+    "error": {
+      "title": "❌ 發生錯誤",
+      "description": "{error}"
+    },
+    
+    "playlist_empty": {
+      "title": "❌ 播放清單為空",
+      "description": "此播放清單沒有任何歌曲"
+    },
+    
+    "playlist_added": {
+      "title": "📋 已加入 YouTube 播放清單",
+      "songs_count": "📊 歌曲數量",
+      "songs_count_value": "{count} 首",
+      "source": "🎵 來源",
+      "queue_position": "📍 隊列位置",
+      "queue_range": "#{start} ~ #{end}",
+      "preview": "🎵 預覽（前3首歌曲）",
+      "more_songs": "... 還有 {count} 首歌曲",
+      "requester": "要求者: {name}"
+    },
+    
+    "play": {
+      "title": "🎵 已加入播放隊列",
+      "now_playing": "🎶 正在播放",
+      "searching": "🔍 搜尋中：`{query}`",
+      "no_results": "❌ 找不到結果：`{query}`",
+      "select_track": "請選擇要播放的歌曲：",      "search_results": "🔍 YouTube 搜尋結果",
+      "search_error": "YouTube 搜索時發生錯誤。",
+      "youtube_only": "此機器人僅支援 YouTube 連結。",
+      "load_failed": "無法載入 YouTube 連結。",      "added": "已將 **{title}** 加入播放隊列",
+      "playlist_added": "📋 已從播放清單 **{name}** 加入 {count} 首歌曲",
+      "track_info": "**時長：** {duration}\n**點播者：** {requester}",
+      "position": "隊列位置：**#{position}**",
+      "author": "作者",
+      "duration": "時長",
+      "queue_position": "隊列位置",
+      "source": "🎵 來源",
+      "requester": "點播者: {name}",
+      "select_footer": "請從下方選擇歌曲"
+    },
+    
+    "pause": {
+      "success": "⏸️ 已暫停目前播放的歌曲。",
+      "already_paused": "⏸️ 已經是暫停狀態。",
+      "resumed": "▶️ 已恢復播放。"
+    },
+    
+    "resume": {
+      "not_paused": "❌ 音樂沒有暫停。"
+    },
+    
+    "skip": {
+      "success": "⏭️ 已跳過 **{title}**",
+      "no_next": "播放隊列中沒有更多歌曲。",
+      "skipped_by": "跳過者",
+      "vote_title": "⏭️ 跳過投票",
+      "vote_description": "目前語音頻道有 {count} 位真人成員，至少需要 {required} 票同意才能跳過。\n請使用下方按鈕投票。",
+      "vote_status_title": "📊 票數狀態",
+      "vote_yes": "同意",
+      "vote_no": "反對",
+      "vote_started": "⏭️ 已發起跳過投票。",
+      "vote_recorded": "✅ 已記錄你的投票。",
+      "vote_closed": "投票已結束。",
+      "vote_passed": "✅ 投票通過，已跳過 **{title}**",
+      "vote_failed": "❌ 投票未通過，歌曲維持播放。",
+      "vote_timeout": "⌛ 投票逾時，歌曲維持播放。"
+    },
+    
+    "stop": {
+      "success": "⏹️ 已停止播放並清空隊列。",
+      "left_voice": "👋 已離開語音頻道。"
+    },
+    
+    "queue": {
+      "title": "📋 播放隊列",
+      "now_playing": "**正在播放：**",
+      "up_next": "**接下來播放：**",
+      "empty": "播放隊列是空的。使用 `/play` 新增歌曲！",
+      "page": "第 {current}/{total} 頁",
+      "total_tracks": "共 {count} 首歌曲 | 總時長：{duration}",
+      "track_line": "`{num}.` [{title}]({url}) `[{duration}]` - {requester}"
+    },
+    
+    "nowplaying": {
+      "title": "🎵 正在播放",
+      "now_playing": "🎵 正在播放",
+      "not_playing": "❌ 目前沒有正在播放的音樂",
+      "requester": "點播者",
+      "author": "作者",
+      "duration": "時長",
+      "time_format": "{current}/{total}",
+      "progress": "進度",
+      "status": "狀態",
+      "status_playing": "▶️ 播放中",
+      "status_paused": "⏸️ 已暫停",
+      "volume": "音量",
+      "queue_length": "隊列長度",
+      "queue_count": "{count} 首",
+      "loop": "循環模式",
+      "loop_off": "關閉",
+      "loop_track": "單曲循環",
+      "loop_queue": "列表循環"
+    },
+    
+    "volume": {
+      "title": "🔊 音量控制",
+      "changed": "{icon} 音量已設定為 **{volume}%**",
+      "current": "目前音量：**{volume}%**",
+      "invalid": "❌ 無效音量",
+      "invalid_desc": "音量必須在 0 到 100 之間",
+      "no_player": "❌ 沒有活躍的播放器"
+    },
+    
+    "loop": {
+      "title": "🔁 循環模式已更改",
+      "off": "🔁 循環模式已關閉。",
+      "off_desc": "循環模式：**關閉**",
+      "track": "🔂 單曲循環模式已啟用。",
+      "track_desc": "循環模式：**單曲循環**",
+      "queue": "🔁 列表循環模式已啟用。",
+      "queue_desc": "循環模式：**列表循環**",
+      "invalid": "❌ 無效的循環模式。使用：off、track 或 queue。",
+      "no_player": "❌ 沒有活躍的播放器"
+    },
+    
+    "shuffle": {
+      "title": "🔀 隨機模式",
+      "success": "🔀 已隨機排序隊列中的 {count} 首歌曲。",
+      "enabled": "隨機播放：**已開啟**",
+      "disabled": "隨機播放：**已關閉**",
+      "empty": "❌ 播放隊列是空的。"
+    },
+    
+    "disconnect": {
+      "title": "👋 已離開語音頻道",
+      "success": "機器人已離開語音頻道並清空隊列",
+      "not_connected": "❌ 未連接語音頻道",
+      "no_permission": "❌ 權限不足",
+      "same_channel_required": "你需要在同一個語音頻道"
+    },
+    
+    "musicnode": {
+      "title": "🎵 Lavalink 節點狀態",
+      "not_initialized": "❌ Lavalink 未初始化",
+      "not_initialized_desc": "Lavalink 服務尚未啟動或連接失敗",
+      "no_nodes": "❌ 沒有可用的節點",
+      "no_nodes_desc": "目前沒有連接任何 Lavalink 節點",
+      "total_nodes": "目前共有 **{count}** 個節點",
+      "node_name": "節點 #{num}：{name}",
+      "status": "**狀態**",
+      "status_online": "線上",
+      "status_offline": "離線",
+      "region": "🏷️ **區域**",
+      "players": "🎵 **播放器數量**",
+      "playing": "▶️ **播放中**",
+      "memory": "💾 **記憶體使用**",
+      "memory_format": "{used}MB / {total}MB",
+      "cpu": "🖥️ **CPU 使用率**",
+      "cpu_format": "{usage}%",
+      "uptime": "⏰ **運行時間**",
+      "uptime_format": "{hours} 小時",
+      "quality": "連線品質",
+      "quality_excellent": "🟢 優秀",
+      "quality_good": "🟡 良好",
+      "quality_fair": "🟠 一般",
+      "quality_poor": "🔴 較差"
+    },
+    
+    "remove": {
+      "success": "🗑️ 已從隊列中移除 **{title}**。",
+      "invalid": "❌ 無效的歌曲編號。",
+      "empty": "❌ 播放隊列是空的。"
+    },
+    
+    "clear": {
+      "success": "🗑️ 已從隊列中清除 {count} 首歌曲。",
+      "empty": "❌ 播放隊列已經是空的。"
+    },
+    
+    "seek": {
+      "success": "⏩ 已跳轉到 {time}",
+      "invalid": "❌ 無效的時間格式。使用：MM:SS 或秒數。",
+      "out_of_range": "❌ 時間超過歌曲長度。"
+    },
+    
+    "lyrics": {
+      "title": "📜 歌詞",
+      "searching": "🔍 搜尋歌詞中...",
+      "not_found": "❌ 找不到歌詞：**{title}**",
+      "error": "❌ 取得歌詞失敗。"
+    }
+  },
+  "playlist": {
+    "saved": "💾 已將目前隊列儲存為播放清單：**{name}**",
+    "loaded": "📋 已載入播放清單：**{name}** ({count} 首歌曲)",
+    "deleted": "🗑️ 已刪除播放清單：**{name}**",
+    "not_found": "❌ 找不到播放清單：**{name}**",
+    "list_title": "📚 你的播放清單",
+    "list_empty": "你還沒有儲存任何播放清單。",
+    "already_exists": "❌ 播放清單 **{name}** 已經存在。"
+  },
+  
+  "admin": {
+    "prefix_changed": "✅ 指令前綴已變更為：`{prefix}`",
+    "settings_title": "⚙️ 機器人設定",
+    "reload_success": "🔄 已重新載入擴充功能：**{extension}**",
+    "reload_failed": "❌ 重新載入擴充功能失敗：**{extension}**",
+    "blacklist_added": "🚫 已將 **{user}** 加入黑名單。",
+    "blacklist_removed": "✅ 已將 **{user}** 從黑名單移除。",
+    "blacklisted": "❌ 你已被列入黑名單，無法使用此機器人。",
+    "blacklist": {
+      "operation_failed": "❌ 操作失敗",
+      "cannot_blacklist_self": "你不能封鎖自己！",
+      "cannot_blacklist_bot": "不能封鎖機器人！",
+      "cannot_blacklist_admin": "不能封鎖伺服器管理員！",
+      "no_permission": "❌ 權限不足",
+      "owner_only": "只有 Bot 擁有者可以執行全域封鎖！",
+      "add_success": "🚫 已將用戶加入黑名單",
+      "add_success_desc": "**用戶：** {user}\n**範圍：** {scope}\n**原因：** {reason}\n**期限：** {duration}",
+      "add_fail": "將用戶加入黑名單失敗",
+      "remove_success": "✅ 黑名單已移除",
+      "remove_success_desc": "**用戶：** {user}\n**移除範圍：** {scope} 黑名單",
+      "remove_fail": "從黑名單移除失敗",
+      "user_not_blacklisted": "❌ 不在黑名單中",
+      "user_not_blacklisted_desc": "用戶 **{user}** 不在黑名單中",
+      "info_title": "📋 黑名單資訊 - {user}",
+      "info_scope": "**範圍：**",
+      "info_reason": "**原因：**",
+      "info_added_at": "**加入時間：**",
+      "info_expires_at": "**到期時間：**",
+      "info_permanent": "永久",
+      "info_not_found": "用戶不在 {scope} 黑名單中",
+      "list_title": "📋 {scope} 黑名單",
+      "list_empty": "{scope} 黑名單中沒有用戶",
+      "list_entry": "• **{user}** (ID: `{id}`)\n  原因：{reason}\n  加入時間：{date}",
+      "list_count": "共 {count} 位用戶",
+      "list_page_footer": "第 {current}/{total} 頁 | 使用 /blacklist check <用戶> 查看詳細資訊",
+      "list_item_title": "{index}. 用戶 ID: {user_id}",
+      "list_item_reason": "**原因**: {reason}",
+      "list_item_added": "**加入時間**: {added_at}",
+      "list_item_expires": "**到期**: {expires_at}",
+      "check_blacklisted_title": "🚫 黑名單用戶",
+      "check_blacklisted_desc": "{user} 目前在黑名單中",
+      "check_not_blacklisted_title": "✅ 正常用戶",
+      "check_not_blacklisted_desc": "{user} 不在黑名單中",
+      "check_field_reason": "原因",
+      "check_field_added_at": "加入時間",
+      "check_field_expires": "期限",
+      "check_permanent": "永久封鎖",
+      "check_expires_at": "到期時間: {time}",
+      "cleanup_title": "🧹 清理完成",
+      "cleanup_desc": "已清理 {count} 個過期的黑名單條目",
+      "error_no_permission": "❌ 權限不足",
+      "error_no_permission_desc": "你需要「管理員」權限才能使用此指令！",
+      "error_title": "❌ 發生錯誤",
+      "error_desc": "執行指令時發生錯誤：{error}",
+      "scope_server": "伺服器",
+      "scope_global": "全域",
+      "duration_permanent": "永久",
+      "duration_days": "{days} 天"
+    },
+    "announcement": {
+      "current_title": "📢 目前的公告頻道",
+      "current_desc": "本伺服器已設定公告頻道為 {channel}",
+      "channel_not_found": "⚠️ 設定的公告頻道已不存在或被刪除",
+      "reset_hint": "請使用 `/announcement 設定 #頻道` 重新設定公告頻道",
+      "not_set_title": "📢 公告頻道未設定",
+      "not_set_desc": "本伺服器尚未設定接收官方公告的頻道",
+      "how_to_set": "使用 `/announcement 設定 #頻道` 來設定公告頻道",
+      "channel_required": "請選擇要設定的頻道！",
+      "no_permission": "機器人在頻道 {channel} 中沒有「發送訊息」或「嵌入連結」權限，請先設定權限後再試。",
+      "set_success": "✅ 公告頻道設定成功",
+      "set_success_desc": "已將 {channel} 設定為接收官方公告的頻道",
+      "about_announcements": "• 機器人重大更新通知\n• 新功能發布資訊\n• 維護公告\n• 重要系統通知",
+      "test_title": "公告頻道設定成功",
+      "test_desc": "這是一則測試訊息！\n\n此頻道已成功設定為 Ghost Music Bot 的官方公告頻道。\n未來所有重要更新、新功能發布、維護通知等官方公告都會發送到這裡。",
+      "test_footer": "Ghost Music Bot 官方公告系統",
+      "set_fail": "設定公告頻道時發生錯誤，請稍後再試。",
+      "not_set_remove": "本伺服器尚未設定公告頻道。",
+      "remove_success": "✅ 已移除公告頻道設定",
+      "remove_success_desc": "本伺服器將不再接收官方公告。\n若未來想重新接收公告，請使用 `/announcement 設定 #頻道`",
+      "remove_fail": "移除公告頻道設定時發生錯誤，請稍後再試。"
+    }
+  },
+  
+  "utils": {
+    "ping": {
+      "title": "🏓 Pong!",
+      "latency": "延遲",
+      "api_latency": "API 延遲",
+      "calculating": "計算中...",
+      "connection_status": "連線狀態",
+      "status_excellent": "🟢 極佳",
+      "status_good": "🟡 良好",
+      "status_fair": "🟠 一般",
+      "status_poor": "🔴 較差"
+    },
+    "help": {
+      "title": "🎵 Discord 音樂機器人",
+      "description": "使用 Slash Commands 的現代音樂機器人",
+      "music_features": "🎵 音樂功能",
+      "music_desc": "• `/play` - 播放音樂\n• `/pause` - 暫停播放\n• `/skip` - 跳過歌曲\n• `/queue` - 查看隊列",
+      "utils_features": "🔧 工具功能",
+      "utils_desc": "• `/ping` - 檢查延遲\n• `/stats` - 機器人統計\n• `/info` - 機器人資訊",
+      "usage": "📚 使用方式",
+      "usage_desc": "使用 `/help music` 或 `/help utils` 查看詳細指令",
+      "footer": "💡 提示：所有指令都使用 Slash Commands，在聊天框輸入 / 即可看到所有可用指令",
+      "music_title": "🎵 音樂指令",
+      "utils_title": "🔧 工具指令",
+      "cmd_play": "🎵 `/play`",
+      "cmd_play_desc": "播放音樂或添加到隊列",
+      "cmd_play_note": "支援 YouTube、SoundCloud 等",
+      "cmd_pause": "⏸️ `/pause`",
+      "cmd_pause_desc": "暫停目前播放的音樂",
+      "cmd_resume": "▶️ `/resume`",
+      "cmd_resume_desc": "繼續播放",
+      "cmd_skip": "⏭️ `/skip`",
+      "cmd_skip_desc": "跳過目前歌曲",
+      "cmd_stop": "⏹️ `/stop`",
+      "cmd_stop_desc": "停止播放並清空隊列",
+      "cmd_queue": "📋 `/queue`",
+      "cmd_queue_desc": "顯示播放隊列",
+      "cmd_queue_note": "可指定頁數",
+      "cmd_nowplaying": "🎵 `/nowplaying`",
+      "cmd_nowplaying_desc": "顯示目前播放歌曲",
+      "cmd_nowplaying_note": "包含進度條和詳細資訊",
+      "cmd_volume": "🔊 `/volume`",
+      "cmd_volume_desc": "調整音量 (0-100)",
+      "cmd_shuffle": "🔀 `/shuffle`",
+      "cmd_shuffle_desc": "開關隨機播放",
+      "cmd_loop": "🔁 `/loop`",
+      "cmd_loop_desc": "設定循環模式",
+      "cmd_loop_note": "關閉/單曲/隊列",
+      "cmd_disconnect": "👋 `/disconnect`",
+      "cmd_disconnect_desc": "離開語音頻道",
+      "cmd_ping": "🏓 `/ping`",
+      "cmd_ping_desc": "檢查機器人延遲",
+      "cmd_ping_note": "顯示 WebSocket 和 API 延遲",
+      "cmd_stats": "📊 `/stats`",
+      "cmd_stats_desc": "顯示機器人統計",
+      "cmd_stats_note": "運行時間、記憶體使用等",
+      "cmd_info": "🤖 `/info`",
+      "cmd_info_desc": "顯示機器人資訊",
+      "cmd_info_note": "版本、功能介紹等",
+      "cmd_invite": "🔗 `/invite`",
+      "cmd_invite_desc": "獲取機器人邀請連結",
+      "cmd_invite_note": "邀請機器人到你的伺服器"
+    },
+    "stats": {
+      "title": "📊 機器人統計",
+      "uptime": "🕐 運行時間",
+      "latency": "🏓 延遲",
+      "servers": "🏠 伺服器數",
+      "users": "👥 用戶數",
+      "voice_connections": "🎵 語音連接",
+      "loaded_commands": "💬 已載入指令",
+      "memory": "💾 記憶體",
+      "cpu": "🖥️ CPU",
+      "python": "🐍 Python",
+      "footer": "Discord.py {version} | Lavalink 音樂系統"
+    },
+    "info": {
+      "title": "🤖 Discord 音樂機器人",
+      "description": "使用 Lavalink 技術的高品質音樂機器人",
+      "bot_name": "🏷️ 機器人名稱",
+      "id": "🆔 ID",
+      "created_date": "📅 創建日期",
+      "music_engine": "🎵 音樂引擎",
+      "engine_version": "Lavalink v4.0+",
+      "dev_language": "🔧 開發語言",
+      "language_version": "Python 3.8+",
+      "discord_py": "📚 Discord.py",
+      "features_title": "✨ 功能特色",
+      "feature_1": "🎵 高品質音樂播放",
+      "feature_2": "🔍 智能搜尋系統",
+      "feature_3": "📋 播放隊列管理",
+      "feature_4": "🔊 音量控制",
+      "advanced_title": "🎛️ 進階功能",
+      "feature_5": "🔁 重複播放模式",
+      "feature_6": "🔀 隨機播放",
+      "feature_7": "⚡ Slash Commands",
+      "platforms": "🌐 支援平台",
+      "platforms_list": "🟢 YouTube\n🟢 SoundCloud\n🟢 Bandcamp\n🟢 Twitch",
+      "footer": "💡 使用 /help 查看所有可用指令 | 開發者：博士助理"
+    },
+    "invite": {
+      "title": "🔗 邀請音樂機器人",
+      "description": "**[點擊這裡邀請機器人]({url})**",
+      "required_permissions": "📋 所需權限",
+      "permissions_list": "• 📖 讀取訊息\n• 💬 發送訊息\n• 🔗 嵌入連結\n• 😀 添加反應\n• 🔊 連接語音\n• 🎤 在語音中說話\n• ⚡ 使用斜線指令",
+      "feature_preview": "🎵 功能預覽",
+      "preview_desc": "邀請後即可在你的伺服器中使用:\n`/play` 播放音樂\n`/help` 查看所有指令",
+      "footer": "感謝你選擇我們的音樂機器人！🎶"
+    }
+  },
+  
+  "events": {
+    "joined_voice": "👋 已加入 **{channel}**",
+    "left_voice": "👋 已離開語音頻道。",
+    "queue_ended": "🎵 播放完畢",
+    "queue_ended_desc": "所有歌曲播放完畢，機器人已離開語音頻道。",
+    "queue_ended_footer": "🔧 感謝使用 Ghost Music 音樂機器人",
+    "auto_leave": "⚠️ 長時間無活動",
+    "auto_leave_desc": "由於語音頻道無活動且無音樂播放超過 {minutes} 分鐘，機器人已自動離開以節省資源。",
+    "auto_leave_footer": "🔧 節能模式 - 感謝您的理解",
+    "track_start": "▶️ 正在播放：**{title}**",
+    "track_end": "播放完畢：**{title}**"
+  },
+  
+  "errors": {
+    "generic": "❌ 處理你的請求時發生錯誤。",
+    "lavalink_not_ready": "❌ 音樂系統尚未就緒，請稍後再試。",
+    "track_load_failed": "❌ 載入音軌失敗。",
+    "voice_connection_failed": "❌ 無法連接到語音頻道。",
+    "insufficient_permissions": "❌ 機器人沒有權限加入/發言此語音頻道。"  },
+  
+  "panel": {
+    "no_music": "🎵 沒有正在播放的音樂",
+    "no_music_desc": "使用 `/play` 來播放音樂！",
+    "now_playing": "🎵 正在播放",
+    "author": "👤 作者",
+    "duration": "⏱️ 時長",
+    "volume": "🔊 音量",
+    "queue_status": "📋 隊列狀態",
+    "queue_count": "隊列中還有 **{count}** 首歌曲",
+    "loop_track": "🔂 單曲循環",
+    "loop_queue": "🔁 列表循環",
+    "requester": "點播者: {name}",
+    "need_voice": "❌ 你需要在語音頻道中才能控制音樂！",
+    "same_voice_required": "❌ 你必須與機器人在同一個語音頻道！",
+    "resumed": "▶️ 已恢復播放",
+    "paused": "⏸️ 已暫停播放",
+    "skipped": "⏭️ 已跳過：**{title}**",
+    "no_music_playing": "❌ 沒有正在播放的音樂",
+    "stopped": "⏹️ 已停止播放並清空隊列",
+    "playback_stopped": "⏹️ 播放已停止",
+    "playback_stopped_desc": "使用 `/play` 來播放音樂！",
+    "loop_off": "➡️ 已關閉循環",
+    "loop_track_enabled": "🔂 已開啟單曲循環",
+    "loop_queue_enabled": "🔁 已開啟列表循環",
+    "no_queue": "❌ 隊列中沒有歌曲",
+    "shuffled": "🔀 已隨機排序 {count} 首歌曲",
+    "operation_failed": "❌ 操作失敗"  }
+}

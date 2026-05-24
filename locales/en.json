@@ -1,0 +1,496 @@
+{
+  "_language_name": "English",
+  "_language_emoji": "🇬🇧",
+  
+  "common": {
+    "error": "❌ Error",
+    "success": "✅ Success",
+    "warning": "⚠️ Warning",
+    "loading": "⏳ Loading...",
+    "no_permission": "You don't have permission to use this command.",
+    "bot_no_permission": "Bot doesn't have sufficient permissions.",
+    "not_in_voice": "You need to join a voice channel first!",
+    "bot_not_in_voice": "Bot is not in any voice channel.",
+    "same_voice": "You must be in the same voice channel as the bot!",
+    "nothing_playing": "Nothing is currently playing.",
+    "invalid_input": "Invalid input.",
+    "command_cooldown": "Command on cooldown. Please wait {time} seconds."
+  },
+  
+  "language": {
+    "title": "🌐 Language Settings",
+    "current": "Current Language: **{language}**",
+    "select_prompt": "Please select your preferred language:",
+    "changed": "✅ Language has been changed to **{language}**",
+    "guild_changed": "✅ Server language has been changed to **{language}**",
+    "invalid": "❌ Invalid language code. Available languages: {languages}",
+    "user_setting": "👤 Personal Language Setting",
+    "guild_setting": "🏠 Server Language Setting",
+    "available": "Available Languages",
+    "switch_to": "Switch to {language}",
+    "select_placeholder": "Select your language / 選擇你的語言..."
+  },
+  
+  "music": {
+    "blacklisted": {
+      "title": "❌ You are Blacklisted",
+      "description": "You cannot use this music feature",
+      "reason": "Reason",
+      "footer": "If you have questions, please contact the server administrator"
+    },
+    
+    "queue_ended": {
+      "title": "🎵 Playback Complete",
+      "description": "All songs have finished playing, bot has left the voice channel.",
+      "footer": "🔧 Thank you for using Ghost Music Bot"
+    },
+    
+    "error": {
+      "title": "❌ Error Occurred",
+      "description": "{error}"
+    },
+    
+    "playlist_empty": {
+      "title": "❌ Playlist is Empty",
+      "description": "This playlist contains no songs"
+    },
+    
+    "playlist_added": {
+      "title": "📋 YouTube Playlist Added",
+      "songs_count": "📊 Song Count",
+      "songs_count_value": "{count} songs",
+      "source": "🎵 Source",
+      "queue_position": "📍 Queue Position",
+      "queue_range": "#{start} ~ #{end}",
+      "preview": "🎵 Preview (First 3 Songs)",
+      "more_songs": "... and {count} more songs",
+      "requester": "Requested by: {name}"
+    },
+    
+    "play": {
+      "title": "🎵 Added to Queue",
+      "now_playing": "🎶 Now Playing",
+      "searching": "🔍 Searching for: `{query}`",
+      "no_results": "❌ No results found for: `{query}`",
+      "select_track": "Please select a track to play:",
+      "search_results": "🔍 YouTube Search Results",
+      "search_error": "An error occurred during YouTube search.",
+      "youtube_only": "This bot only supports YouTube links.",
+      "load_failed": "Failed to load the YouTube link.",
+      "added": "Added **{title}** to the queue",
+      "playlist_added": "📋 Added {count} tracks to the queue from playlist: **{name}**",
+      "track_info": "**Duration:** {duration}\n**Requester:** {requester}",
+      "position": "Queue Position: **#{position}**",
+      "author": "Author",
+      "duration": "Duration",
+      "queue_position": "Queue Position",
+      "source": "🎵 Source",
+      "requester": "Requested by: {name}",
+      "select_footer": "Please select a song from below"
+    },
+    
+    "pause": {
+      "success": "⏸️ Paused the current track.",
+      "already_paused": "⏸️ Already paused.",
+      "resumed": "▶️ Resumed playback."
+    },
+    
+    "resume": {
+      "not_paused": "❌ Music is not paused."
+    },
+    
+    "skip": {
+      "success": "⏭️ Skipped **{title}**",
+      "no_next": "No more tracks in queue.",
+      "skipped_by": "Skipped by",
+      "vote_title": "⏭️ Skip Vote",
+      "vote_description": "There are {count} real members in the voice channel. At least {required} yes votes are needed to skip.\nUse the buttons below to vote.",
+      "vote_status_title": "📊 Vote Status",
+      "vote_yes": "Yes",
+      "vote_no": "No",
+      "vote_started": "⏭️ Skip vote has started.",
+      "vote_recorded": "✅ Your vote has been recorded.",
+      "vote_closed": "The vote is already closed.",
+      "vote_passed": "✅ Vote passed, **{title}** has been skipped.",
+      "vote_failed": "❌ Vote did not pass, the track will keep playing.",
+      "vote_timeout": "⌛ Vote timed out, the track will keep playing."
+    },
+    
+    "stop": {
+      "success": "⏹️ Stopped playback and cleared the queue.",
+      "left_voice": "👋 Left voice channel."
+    },
+    
+    "queue": {
+      "title": "📋 Music Queue",
+      "now_playing": "**Now Playing:**",
+      "up_next": "**Up Next:**",
+      "empty": "Queue is empty. Add songs with `/play`!",
+      "page": "Page {current}/{total}",
+      "total_tracks": "Total: {count} tracks | Duration: {duration}",
+      "track_line": "`{num}.` [{title}]({url}) `[{duration}]` - {requester}"
+    },
+    
+    "nowplaying": {
+      "title": "🎵 Now Playing",
+      "now_playing": "🎵 Now Playing",
+      "not_playing": "❌ Nothing is currently playing",
+      "requester": "Requester",
+      "author": "Author",
+      "duration": "Duration",
+      "time_format": "{current}/{total}",
+      "progress": "Progress",
+      "status": "Status",
+      "status_playing": "▶️ Playing",
+      "status_paused": "⏸️ Paused",
+      "volume": "Volume",
+      "queue_length": "Queue Length",
+      "queue_count": "{count} track(s)",
+      "loop": "Loop Mode",
+      "loop_off": "Off",
+      "loop_track": "Track",
+      "loop_queue": "Queue"
+    },
+    
+    "volume": {
+      "title": "🔊 Volume Control",
+      "changed": "{icon} Volume set to **{volume}%**",
+      "current": "Current volume: **{volume}%**",
+      "invalid": "❌ Invalid Volume",
+      "invalid_desc": "Volume must be between 0 and 100",
+      "no_player": "❌ No active player"
+    },
+    
+    "loop": {
+      "title": "🔁 Loop Mode Changed",
+      "off": "🔁 Loop mode disabled.",
+      "off_desc": "Loop mode: **Off**",
+      "track": "🔂 Looping current track.",
+      "track_desc": "Loop mode: **Track Loop**",
+      "queue": "🔁 Looping entire queue.",
+      "queue_desc": "Loop mode: **Queue Loop**",
+      "invalid": "❌ Invalid loop mode. Use: off, track, or queue.",
+      "no_player": "❌ No active player"
+    },
+    
+    "shuffle": {
+      "title": "🔀 Shuffle Mode",
+      "success": "🔀 Shuffled {count} tracks in the queue.",
+      "enabled": "Shuffle: **Enabled**",
+      "disabled": "Shuffle: **Disabled**",
+      "empty": "❌ Queue is empty"
+    },
+    
+    "disconnect": {
+      "title": "👋 Disconnected",
+      "success": "Bot has left the voice channel and cleared the queue",
+      "not_connected": "❌ Not connected to voice channel",
+      "no_permission": "❌ Insufficient Permission",
+      "same_channel_required": "You must be in the same voice channel"
+    },
+    
+    "musicnode": {
+      "title": "🎵 Lavalink Node Status",
+      "not_initialized": "❌ Lavalink Not Initialized",
+      "not_initialized_desc": "Lavalink service has not started or connection failed",
+      "no_nodes": "❌ No Available Nodes",
+      "no_nodes_desc": "Currently no Lavalink nodes connected",
+      "total_nodes": "Total: **{count}** node(s)",
+      "node_name": "Node #{num}: {name}",
+      "status": "**Status**",
+      "status_online": "Online",
+      "status_offline": "Offline",
+      "region": "🏷️ **Region**",
+      "players": "🎵 **Player Count**",
+      "playing": "▶️ **Playing**",
+      "memory": "💾 **Memory Usage**",
+      "memory_format": "{used}MB / {total}MB",
+      "cpu": "🖥️ **CPU Usage**",
+      "cpu_format": "{usage}%",
+      "uptime": "⏰ **Uptime**",
+      "uptime_format": "{hours} hours",
+      "quality": "Connection Quality",
+      "quality_excellent": "🟢 Excellent",
+      "quality_good": "🟡 Good",
+      "quality_fair": "🟠 Fair",
+      "quality_poor": "🔴 Poor"
+    },
+    
+    "remove": {
+      "success": "🗑️ Removed **{title}** from the queue.",
+      "invalid": "❌ Invalid track number.",
+      "empty": "❌ Queue is empty."
+    },
+    
+    "clear": {
+      "success": "🗑️ Cleared {count} tracks from the queue.",
+      "empty": "❌ Queue is already empty."
+    },
+    
+    "seek": {
+      "success": "⏩ Seeked to {time}",
+      "invalid": "❌ Invalid time format. Use: MM:SS or seconds.",
+      "out_of_range": "❌ Time exceeds track duration."
+    },
+    
+    "lyrics": {
+      "title": "📜 Lyrics",
+      "searching": "🔍 Searching for lyrics...",
+      "not_found": "❌ Lyrics not found for: **{title}**",
+      "error": "❌ Failed to fetch lyrics."
+    }
+  },
+  "playlist": {
+    "saved": "💾 Saved current queue as playlist: **{name}**",
+    "loaded": "📋 Loaded playlist: **{name}** ({count} tracks)",
+    "deleted": "🗑️ Deleted playlist: **{name}**",
+    "not_found": "❌ Playlist not found: **{name}**",
+    "list_title": "📚 Your Playlists",
+    "list_empty": "You don't have any saved playlists.",
+    "already_exists": "❌ Playlist **{name}** already exists."
+  },
+  
+  "admin": {
+    "prefix_changed": "✅ Command prefix changed to: `{prefix}`",
+    "settings_title": "⚙️ Bot Settings",
+    "reload_success": "🔄 Reloaded extension: **{extension}**",
+    "reload_failed": "❌ Failed to reload extension: **{extension}**",
+    "blacklist_added": "🚫 Added **{user}** to blacklist.",
+    "blacklist_removed": "✅ Removed **{user}** from blacklist.",
+    "blacklisted": "❌ You are blacklisted from using this bot.",
+    "blacklist": {
+      "operation_failed": "❌ Operation Failed",
+      "cannot_blacklist_self": "You cannot blacklist yourself!",
+      "cannot_blacklist_bot": "Cannot blacklist bots!",
+      "cannot_blacklist_admin": "Cannot blacklist server administrators!",
+      "no_permission": "❌ Insufficient Permission",
+      "owner_only": "Only Bot owners can perform global blacklist!",
+      "add_success": "🚫 User Blacklisted",
+      "add_success_desc": "**User:** {user}\n**Scope:** {scope}\n**Reason:** {reason}\n**Duration:** {duration}",
+      "add_fail": "Failed to add user to blacklist",
+      "remove_success": "✅ Blacklist Removed",
+      "remove_success_desc": "**User:** {user}\n**Removed from:** {scope} blacklist",
+      "remove_fail": "Failed to remove from blacklist",
+      "user_not_blacklisted": "❌ Not in Blacklist",
+      "user_not_blacklisted_desc": "User **{user}** is not in the blacklist",
+      "info_title": "📋 Blacklist Info - {user}",
+      "info_scope": "**Scope:**",
+      "info_reason": "**Reason:**",
+      "info_added_at": "**Added Time:**",
+      "info_expires_at": "**Expiry Time:**",
+      "info_permanent": "Permanent",
+      "info_not_found": "User is not in the {scope} blacklist",
+      "list_title": "📋 {scope} Blacklist",
+      "list_empty": "No users in the {scope} blacklist",
+      "list_entry": "• **{user}** (ID: `{id}`)\n  Reason: {reason}\n  Added: {date}",
+      "list_count": "Total {count} user(s)",
+      "list_page_footer": "Page {current}/{total} | Use /blacklist check <user> for details",
+      "list_item_title": "{index}. User ID: {user_id}",
+      "list_item_reason": "**Reason**: {reason}",
+      "list_item_added": "**Added**: {added_at}",
+      "list_item_expires": "**Expires**: {expires_at}",
+      "check_blacklisted_title": "🚫 Blacklisted User",
+      "check_blacklisted_desc": "{user} is currently blacklisted",
+      "check_not_blacklisted_title": "✅ Normal User",
+      "check_not_blacklisted_desc": "{user} is not blacklisted",
+      "check_field_reason": "Reason",
+      "check_field_added_at": "Added Time",
+      "check_field_expires": "Duration",
+      "check_permanent": "Permanent Ban",
+      "check_expires_at": "Expires: {time}",
+      "cleanup_title": "🧹 Cleanup Complete",
+      "cleanup_desc": "Cleaned {count} expired blacklist entry(s)",
+      "error_no_permission": "❌ Insufficient Permission",
+      "error_no_permission_desc": "You need Administrator permission to use this command!",
+      "error_title": "❌ Error Occurred",
+      "error_desc": "Error executing command: {error}",
+      "scope_server": "Server",
+      "scope_global": "Global",
+      "duration_permanent": "Permanent",
+      "duration_days": "{days} days"
+    },
+    "announcement": {
+      "current_title": "📢 Current Announcement Channel",
+      "current_desc": "This server's announcement channel is set to {channel}",
+      "channel_not_found": "⚠️ The configured announcement channel no longer exists or was deleted",
+      "reset_hint": "Use `/announcement 設定 #channel` to reconfigure the announcement channel",
+      "not_set_title": "📢 Announcement Channel Not Set",
+      "not_set_desc": "This server has not set up a channel to receive official announcements",
+      "how_to_set": "Use `/announcement set #channel` to configure an announcement channel",
+      "channel_required": "Please select a channel to configure!",
+      "no_permission": "Bot doesn't have 'Send Messages' or 'Embed Links' permission in channel {channel}. Please configure permissions first.",
+      "set_success": "✅ Announcement Channel Configured Successfully",
+      "set_success_desc": "Set {channel} as the channel to receive official announcements",
+      "about_announcements": "• Major bot update notifications\n• New feature releases\n• Maintenance announcements\n• Important system notifications",
+      "test_title": "Announcement Channel Setup Successful",
+      "test_desc": "This is a test message!\n\nThis channel has been successfully configured as the official announcement channel for Ghost Music Bot.\nAll important updates, new features, maintenance notices, and official announcements will be sent here in the future.",
+      "test_footer": "Ghost Music Bot Official Announcement System",
+      "set_fail": "An error occurred while configuring the announcement channel. Please try again later.",
+      "not_set_remove": "This server has not configured an announcement channel.",
+      "remove_success": "✅ Announcement Channel Configuration Removed",
+      "remove_success_desc": "This server will no longer receive official announcements.\nTo receive announcements again in the future, use `/announcement set #channel`",
+      "remove_fail": "An error occurred while removing the announcement channel configuration. Please try again later."
+    }
+  },
+  
+  "utils": {
+    "ping": {
+      "title": "🏓 Pong!",
+      "latency": "Latency",
+      "api_latency": "API Latency",
+      "calculating": "Calculating...",
+      "connection_status": "Connection Status",
+      "status_excellent": "🟢 Excellent",
+      "status_good": "🟡 Good",
+      "status_fair": "🟠 Fair",
+      "status_poor": "🔴 Poor"
+    },
+    "help": {
+      "title": "🎵 Discord Music Bot",
+      "description": "Modern music bot using Slash Commands",
+      "music_features": "🎵 Music Features",
+      "music_desc": "• `/play` - Play music\n• `/pause` - Pause playback\n• `/skip` - Skip track\n• `/queue` - View queue",
+      "utils_features": "🔧 Utility Features",
+      "utils_desc": "• `/ping` - Check latency\n• `/stats` - Bot statistics\n• `/info` - Bot information",
+      "usage": "📚 Usage",
+      "usage_desc": "Use `/help music` or `/help utils` for detailed commands",
+      "footer": "💡 Tip: All commands use Slash Commands. Type / to see all available commands",
+      "music_title": "🎵 Music Commands",
+      "utils_title": "🔧 Utility Commands",
+      "cmd_play": "🎵 `/play`",
+      "cmd_play_desc": "Play music or add to queue",
+      "cmd_play_note": "Supports YouTube, SoundCloud, etc.",
+      "cmd_pause": "⏸️ `/pause`",
+      "cmd_pause_desc": "Pause current music",
+      "cmd_resume": "▶️ `/resume`",
+      "cmd_resume_desc": "Resume playback",
+      "cmd_skip": "⏭️ `/skip`",
+      "cmd_skip_desc": "Skip current track",
+      "cmd_stop": "⏹️ `/stop`",
+      "cmd_stop_desc": "Stop playback and clear queue",
+      "cmd_queue": "📋 `/queue`",
+      "cmd_queue_desc": "Display playback queue",
+      "cmd_queue_note": "Specify page number",
+      "cmd_nowplaying": "🎵 `/nowplaying`",
+      "cmd_nowplaying_desc": "Show current track",
+      "cmd_nowplaying_note": "Includes progress bar and details",
+      "cmd_volume": "🔊 `/volume`",
+      "cmd_volume_desc": "Adjust volume (0-100)",
+      "cmd_shuffle": "🔀 `/shuffle`",
+      "cmd_shuffle_desc": "Toggle shuffle mode",
+      "cmd_loop": "🔁 `/loop`",
+      "cmd_loop_desc": "Set loop mode",
+      "cmd_loop_note": "Off/Track/Queue",
+      "cmd_disconnect": "👋 `/disconnect`",
+      "cmd_disconnect_desc": "Leave voice channel",
+      "cmd_ping": "🏓 `/ping`",
+      "cmd_ping_desc": "Check bot latency",
+      "cmd_ping_note": "Shows WebSocket and API latency",
+      "cmd_stats": "📊 `/stats`",
+      "cmd_stats_desc": "Show bot statistics",
+      "cmd_stats_note": "Uptime, memory usage, etc.",
+      "cmd_info": "🤖 `/info`",
+      "cmd_info_desc": "Show bot information",
+      "cmd_info_note": "Version, feature introduction, etc.",
+      "cmd_invite": "🔗 `/invite`",
+      "cmd_invite_desc": "Get bot invite link",
+      "cmd_invite_note": "Invite bot to your server"
+    },
+    "stats": {
+      "title": "📊 Bot Statistics",
+      "uptime": "🕐 Uptime",
+      "latency": "🏓 Latency",
+      "servers": "🏠 Servers",
+      "users": "👥 Users",
+      "voice_connections": "🎵 Voice Connections",
+      "loaded_commands": "💬 Loaded Commands",
+      "memory": "💾 Memory",
+      "cpu": "🖥️ CPU",
+      "python": "🐍 Python",
+      "footer": "Discord.py {version} | Lavalink Music System"
+    },
+    "info": {
+      "title": "🤖 Discord Music Bot",
+      "description": "High-quality music bot using Lavalink technology",
+      "bot_name": "🏷️ Bot Name",
+      "id": "🆔 ID",
+      "created_date": "📅 Created Date",
+      "music_engine": "🎵 Music Engine",
+      "engine_version": "Lavalink v4.0+",
+      "dev_language": "🔧 Development Language",
+      "language_version": "Python 3.8+",
+      "discord_py": "📚 Discord.py",
+      "features_title": "✨ Features",
+      "feature_1": "🎵 High-quality music playback",
+      "feature_2": "🔍 Smart search system",
+      "feature_3": "📋 Queue management",
+      "feature_4": "🔊 Volume control",
+      "advanced_title": "🎛️ Advanced Features",
+      "feature_5": "🔁 Loop modes",
+      "feature_6": "🔀 Shuffle playback",
+      "feature_7": "⚡ Slash Commands",
+      "platforms": "🌐 Supported Platforms",
+      "platforms_list": "🟢 YouTube\n🟢 SoundCloud\n🟢 Bandcamp\n🟢 Twitch",
+      "footer": "💡 Use /help to view all available commands | Developer: Bot Assistant"
+    },
+    "invite": {
+      "title": "🔗 Invite Music Bot",
+      "description": "**[Click here to invite bot]({url})**",
+      "required_permissions": "📋 Required Permissions",
+      "permissions_list": "• 📖 Read Messages\n• 💬 Send Messages\n• 🔗 Embed Links\n• 😀 Add Reactions\n• 🔊 Connect to Voice\n• 🎤 Speak in Voice\n• ⚡ Use Slash Commands",
+      "feature_preview": "🎵 Feature Preview",
+      "preview_desc": "After inviting, you can use in your server:\n`/play` Play music\n`/help` View all commands",
+      "footer": "Thank you for choosing our music bot! 🎶"
+    }
+  },
+  
+  "events": {
+    "joined_voice": "👋 Joined **{channel}**",
+    "left_voice": "👋 Left voice channel.",
+    "queue_ended": "🎵 Queue Ended",
+    "queue_ended_desc": "All tracks have finished playing. Bot has left the voice channel.",
+    "queue_ended_footer": "🔧 Thank you for using Ghost Music Bot",
+    "auto_leave": "⚠️ Inactive Timeout",
+    "auto_leave_desc": "No activity detected for {minutes} minutes. Bot has left the voice channel to save resources.",
+    "auto_leave_footer": "🔧 Power saving mode - Thank you for your understanding",
+    "track_start": "▶️ Now playing: **{title}**",
+    "track_end": "Finished playing: **{title}**"
+  },
+  
+  "errors": {
+    "generic": "❌ An error occurred while processing your request.",
+    "lavalink_not_ready": "❌ Music system is not ready. Please try again later.",
+    "track_load_failed": "❌ Failed to load track.",
+    "voice_connection_failed": "❌ Failed to connect to voice channel.",
+    "insufficient_permissions": "❌ Bot doesn't have permission to join/speak in this voice channel."
+  },
+  
+  "panel": {
+    "no_music": "🎵 No music playing",
+    "no_music_desc": "Use `/play` to play music!",
+    "now_playing": "🎵 Now Playing",
+    "author": "👤 Author",
+    "duration": "⏱️ Duration",
+    "volume": "🔊 Volume",
+    "queue_status": "📋 Queue Status",
+    "queue_count": "{count} track(s) in queue",
+    "loop_track": "🔂 Track Loop",
+    "loop_queue": "🔁 Queue Loop",
+    "requester": "Requester: {name}",
+    "need_voice": "❌ You need to be in a voice channel to control music!",
+    "same_voice_required": "❌ You must be in the same voice channel as the bot!",
+    "resumed": "▶️ Resumed playback",
+    "paused": "⏸️ Paused playback",
+    "skipped": "⏭️ Skipped: **{title}**",
+    "no_music_playing": "❌ No music is currently playing",
+    "stopped": "⏹️ Stopped playback and cleared queue",
+    "playback_stopped": "⏹️ Playback Stopped",
+    "playback_stopped_desc": "Use `/play` to play music!",
+    "loop_off": "➡️ Loop disabled",
+    "loop_track_enabled": "🔂 Track loop enabled",
+    "loop_queue_enabled": "🔁 Queue loop enabled",
+    "no_queue": "❌ No tracks in queue",
+    "shuffled": "🔀 Shuffled {count} track(s)",
+    "operation_failed": "❌ Operation failed"
+  }
+}
