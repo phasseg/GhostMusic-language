@@ -1,0 +1,496 @@
+{
+  "_language_name": "日本語",
+  "_language_emoji": "🇯🇵",
+  
+  "common": {
+    "error": "❌ エラー",
+    "success": "✅ 成功",
+    "warning": "⚠️ 警告",
+    "loading": "⏳ 読み込み中...",
+    "no_permission": "このコマンドを使用する権限がありません。",
+    "bot_no_permission": "ボットの権限が不足しています。",
+    "not_in_voice": "先にボイスチャンネルに参加してください！",
+    "bot_not_in_voice": "ボットはボイスチャンネルに参加していません。",
+    "same_voice": "ボットと同じボイスチャンネルにいる必要があります！",
+    "nothing_playing": "現在再生中の音楽はありません。",
+    "invalid_input": "無効な入力です。",
+    "command_cooldown": "コマンドはクールダウン中です。あと {time} 秒お待ちください。"
+  },
+  
+  "language": {
+    "title": "🌐 言語設定",
+    "current": "現在の言語：**{language}**",
+    "select_prompt": "希望する言語を選択してください：",
+    "changed": "✅ 言語を **{language}** に変更しました",
+    "guild_changed": "✅ サーバーの言語を **{language}** に変更しました",
+    "invalid": "❌ 無効な言語コードです。利用可能な言語：{languages}",
+    "user_setting": "👤 個人言語設定",
+    "guild_setting": "🏠 サーバー言語設定",
+    "available": "利用可能な言語",
+    "switch_to": "{language} に切り替える",
+    "select_placeholder": "言語を選択してください / Select your language..."
+  },
+  
+  "music": {
+    "blacklisted": {
+      "title": "❌ あなたはブラックリストに登録されています",
+      "description": "音楽機能を利用することはできません",
+      "reason": "理由",
+      "footer": "ご不明な点がある場合は、サーバー管理者にお問い合わせください"
+    },
+    
+    "queue_ended": {
+      "title": "🎵 再生終了",
+      "description": "すべての楽曲の再生が終了したため、ボットはボイスチャンネルから退出しました。",
+      "footer": "🔧 Ghost Music ボットをご利用いただきありがとうございました"
+    },
+    
+    "error": {
+      "title": "❌ エラー発生",
+      "description": "{error}"
+    },
+    
+    "playlist_empty": {
+      "title": "❌ プレイリストが空です",
+      "description": "このプレイリストには楽曲が含まれていません"
+    },
+    
+    "playlist_added": {
+      "title": "📋 YouTube プレイリストを追加しました",
+      "songs_count": "📊 曲数",
+      "songs_count_value": "{count} 曲",
+      "source": "🎵 ソース",
+      "queue_position": "📍 キューの位置",
+      "queue_range": "#{start} ~ #{end}",
+      "preview": "🎵 プレビュー（最初の3曲）",
+      "more_songs": "... ほか {count} 曲",
+      "requester": "リクエスト者: {name}"
+    },
+    
+    "play": {
+      "title": "🎵 再生キューに追加されました",
+      "now_playing": "🎶 現在再生中",
+      "searching": "🔍 検索中：`{query}`",
+      "no_results": "❌ 結果が見つかりませんでした：`{query}`",
+      "select_track": "再生する楽曲を選択してください：",
+      "search_results": "🔍 YouTube 検索結果",
+      "search_error": "YouTube での検索中にエラーが発生しました。",
+      "youtube_only": "このボットは YouTube リンクのみをサポートしています。",
+      "load_failed": "YouTube リンクを読み込めませんでした。",
+      "added": "**{title}** を再生キューに追加しました",
+      "playlist_added": "📋 プレイリスト **{name}** から {count} 曲を追加しました",
+      "track_info": "**再生時間：** {duration}\n**リクエスト者：** {requester}",
+      "position": "キューの位置：**#{position}**",
+      "author": "アーティスト",
+      "duration": "再生時間",
+      "queue_position": "キューの位置",
+      "source": "🎵 ソース",
+      "requester": "リクエスト者: {name}",
+      "select_footer": "以下から楽曲を選択してください"
+    },
+    
+    "pause": {
+      "success": "⏸️ 現在再生中の楽曲を一時停止しました。",
+      "already_paused": "⏸️ すでに一時停止状態です。",
+      "resumed": "▶️ 再生を再開しました。"
+    },
+    
+    "resume": {
+      "not_paused": "❌ 音楽は一時停止されていません。"
+    },
+    
+    "skip": {
+      "success": "⏭️ **{title}** をスキップしました",
+      "no_next": "再生キューに次の楽曲がありません。",
+      "skipped_by": "スキップしたユーザー",
+      "vote_title": "⏭️ スキップ投票",
+      "vote_description": "現在ボイスチャンネルに {count} 人のユーザーがいます。スキップするには少なくとも {required} 票の賛成が必要です。\n下のボタンから投票してください。",
+      "vote_status_title": "📊 投票状況",
+      "vote_yes": "賛成",
+      "vote_no": "反対",
+      "vote_started": "⏭️ スキップ投票が開始されました。",
+      "vote_recorded": "✅ 投票を記録しました。",
+      "vote_closed": "投票は終了しました。",
+      "vote_passed": "✅ 投票が可決されたため、**{title}** をスキップしました",
+      "vote_failed": "❌ 投票が否決されたため、楽曲の再生を継続します。",
+      "vote_timeout": "⌛ 投票がタイムアウトしたため、楽曲の再生を継続します。"
+    },
+    
+    "stop": {
+      "success": "⏹️ 再生を停止し、キューをクリアしました。",
+      "left_voice": "👋 ボイスチャンネルから退出しました。"
+    },
+    
+    "queue": {
+      "title": "📋 再生キュー",
+      "now_playing": "**現在再生中：**",
+      "up_next": "**次に再生される曲：**",
+      "empty": "再生キューが空です。`/play` を使って楽曲を追加してください！",
+      "page": "{current} / {total} ページ",
+      "total_tracks": "合計 {count} 曲 | 総再生時間：{duration}",
+      "track_line": "`{num}.` [{title}]({url}) `[{duration}]` - {requester}"
+    },
+    
+    "nowplaying": {
+      "title": "🎵 現在再生中",
+      "now_playing": "🎵 現在再生中",
+      "not_playing": "❌ 現在再生中の音楽はありません",
+      "requester": "リクエスト者",
+      "author": "アーティスト",
+      "duration": "再生時間",
+      "time_format": "{current}/{total}",
+      "progress": "進捗",
+      "status": "ステータス",
+      "status_playing": "▶️ 再生中",
+      "status_paused": "⏸️ 一時停止中",
+      "volume": "音量",
+      "queue_length": "キューの長さ",
+      "queue_count": "{count} 曲",
+      "loop": "ループモード",
+      "loop_off": "オフ",
+      "loop_track": "1曲ループ",
+      "loop_queue": "キュー全曲ループ"
+    },
+    
+    "volume": {
+      "title": "🔊 音量コントロール",
+      "changed": "{icon} 音量を **{volume}%** に設定しました",
+      "current": "現在の音量：**{volume}%**",
+      "invalid": "❌ 無効な音量です",
+      "invalid_desc": "音量は 0 から 100 の間で指定してください",
+      "no_player": "❌ アクティブなプレイヤーがありません"
+    },
+    
+    "loop": {
+      "title": "🔁 ループモードが変更されました",
+      "off": "🔁 ループモードをオフにしました。",
+      "off_desc": "ループモード：**オフ**",
+      "track": "🔂 1曲ループモードを有効にしました。",
+      "track_desc": "ループモード：**1曲ループ**",
+      "queue": "🔁 キュー全曲ループモードを有効にしました。",
+      "queue_desc": "ループモード：**キュー全曲ループ**",
+      "invalid": "❌ 無効なループモードです。使用可能：off、track、または queue。",
+      "no_player": "❌ アクティブなプレイヤーがありません"
+    },
+    
+    "shuffle": {
+      "title": "🔀 シャッフルモード",
+      "success": "🔀 キュー内の {count} 曲をランダムに並び替えました。",
+      "enabled": "シャッフル再生：**ON**",
+      "disabled": "シャッフル再生：**OFF**",
+      "empty": "❌ 再生キューが空です。"
+    },
+    
+    "disconnect": {
+      "title": "👋 ボイスチャンネルから退出しました",
+      "success": "ボットはボイスチャンネルから退出し、キューをクリアしました",
+      "not_connected": "❌ ボイスチャンネルに接続されていません",
+      "no_permission": "❌ 権限が不足しています",
+      "same_channel_required": "同じボイスチャンネルにいる必要があります"
+    },
+    
+    "musicnode": {
+      "title": "🎵 Lavalink ノードの状態",
+      "not_initialized": "❌ Lavalink が初期化されていません",
+      "not_initialized_desc": "Lavalink サービスが起動していないか、接続に失敗しました",
+      "no_nodes": "❌ 利用可能なノードがありません",
+      "no_nodes_desc": "現在接続されている Lavalink ノードはありません",
+      "total_nodes": "現在合計 **{count}** 個のノードがあります",
+      "node_name": "ノード #{num}：{name}",
+      "status": "**ステータス**",
+      "status_online": "オンライン",
+      "status_offline": "オフライン",
+      "region": "🏷️ **リージョン**",
+      "players": "🎵 **プレイヤー数**",
+      "playing": "▶️ **再生中**",
+      "memory": "💾 **メモリ使用量**",
+      "memory_format": "{used}MB / {total}MB",
+      "cpu": "🖥️ **CPU 使用率**",
+      "cpu_format": "{usage}%",
+      "uptime": "⏰ **稼働時間**",
+      "uptime_format": "{hours} 時間",
+      "quality": "接続品質",
+      "quality_excellent": "🟢 最高",
+      "quality_good": "🟡 良好",
+      "quality_fair": "🟠 普通",
+      "quality_poor": "🔴 低下"
+    },
+    
+    "remove": {
+      "success": "🗑️ キューから **{title}** を削除しました。",
+      "invalid": "❌ 無効な楽曲番号です。",
+      "empty": "❌ 再生キューが空です。"
+    },
+    
+    "clear": {
+      "success": "🗑️ キューから {count} 曲を消去しました。",
+      "empty": "❌ 再生キューはすでに空です。"
+    },
+    
+    "seek": {
+      "success": "⏩ {time} へ移動しました",
+      "invalid": "❌ 無効な時間形式です。使用例：MM:SS または秒数。",
+      "out_of_range": "❌ 指定された時間が楽曲の長さを超えています。"
+    },
+    
+    "lyrics": {
+      "title": "📜 歌詞",
+      "searching": "🔍 歌詞を検索中...",
+      "not_found": "❌ 歌詞が見つかりませんでした：**{title}**",
+      "error": "❌ 歌詞の取得に失敗しました。"
+    }
+  },
+  "playlist": {
+    "saved": "💾 現在のキューをプレイリストとして保存しました：**{name}**",
+    "loaded": "📋 プレイリストを読み込みました：**{name}** ({count} 曲)",
+    "deleted": "🗑️ プレイリストを削除しました：**{name}**",
+    "not_found": "❌ プレイリストが見つかりません：**{name}**",
+    "list_title": "📚 あなたのプレイリスト",
+    "list_empty": "保存されているプレイリストはありません。",
+    "already_exists": "❌ プレイリスト **{name}** はすでに存在します。"
+  },
+  
+  "admin": {
+    "prefix_changed": "✅ コマンドプレフィックスを `{prefix}` に変更しました",
+    "settings_title": "⚙️ ボット設定",
+    "reload_success": "🔄 拡張機能を再読み込みしました：**{extension}**",
+    "reload_failed": "❌ 拡張機能の再読み込みに失敗しました：**{extension}**",
+    "blacklist_added": "🚫 **{user}** をブラックリストに追加しました。",
+    "blacklist_removed": "✅ **{user}** をブラックリストから削除しました。",
+    "blacklisted": "❌ あなたはブラックリストに登録されているため、このボットを使用できません。",
+    "blacklist": {
+      "operation_failed": "❌ 操作失敗",
+      "cannot_blacklist_self": "自分自身をブロックすることはできません！",
+      "cannot_blacklist_bot": "ボットをブロックすることはできません！",
+      "cannot_blacklist_admin": "サーバー管理者をブロックすることはできません！",
+      "no_permission": "❌ 権限が不足しています",
+      "owner_only": "グローバルブロックを実行できるのはボットの所有者のみです！",
+      "add_success": "🚫 ユーザーをブラックリストに追加しました",
+      "add_success_desc": "**ユーザー：** {user}\n**範囲：** {scope}\n**理由：** {reason}\n**期間：** {duration}",
+      "add_fail": "ユーザーのブラックリストへの追加に失敗しました",
+      "remove_success": "✅ ブラックリストから削除しました",
+      "remove_success_desc": "**ユーザー：** {user}\n**解除範囲：** {scope} ブラックリスト",
+      "remove_fail": "ブラックリストからの削除に失敗しました",
+      "user_not_blacklisted": "❌ ブラックリストに登録されていません",
+      "user_not_blacklisted_desc": "ユーザー **{user}** はブラックリストに登録されていません",
+      "info_title": "📋 ブラックリスト情報 - {user}",
+      "info_scope": "**範囲：**",
+      "info_reason": "**理由：**",
+      "info_added_at": "**追加日時：**",
+      "info_expires_at": "**有効期限：**",
+      "info_permanent": "永久",
+      "info_not_found": "ユーザーは {scope} のブラックリストに登録されていません",
+      "list_title": "📋 {scope} ブラックリスト",
+      "list_empty": "{scope} のブラックリストにユーザーはいません",
+      "list_entry": "• **{user}** (ID: `{id}`)\n  理由：{reason}\n  追加日時：{date}",
+      "list_count": "合計 {count} 人のユーザー",
+      "list_page_footer": "{current} / {total} ページ | 詳細を確認するには /blacklist check <ユーザー> を使用してください",
+      "list_item_title": "{index}. ユーザー ID: {user_id}",
+      "list_item_reason": "**理由**: {reason}",
+      "list_item_added": "**追加日時**: {added_at}",
+      "list_item_expires": "**期限**: {expires_at}",
+      "check_blacklisted_title": "🚫 ブラックリスト登録ユーザー",
+      "check_blacklisted_desc": "{user} は現在ブラックリストに登録されています",
+      "check_not_blacklisted_title": "✅ 通常ユーザー",
+      "check_not_blacklisted_desc": "{user} はブラックリストに登録されていません",
+      "check_field_reason": "理由",
+      "check_field_added_at": "追加日時",
+      "check_field_expires": "期限",
+      "check_permanent": "永久ブロック",
+      "check_expires_at": "有効期限: {time}",
+      "cleanup_title": "🧹 クリーンアップ完了",
+      "cleanup_desc": "期限切れのブラックリスト項目を {count} 件削除しました",
+      "error_no_permission": "❌ 権限が不足しています",
+      "error_no_permission_desc": "このコマンドを使用するには「管理者」権限が必要です！",
+      "error_title": "❌ エラー発生",
+      "error_desc": "コマンドの実行中にエラーが発生しました：{error}",
+      "scope_server": "サーバー",
+      "scope_global": "グローバル",
+      "duration_permanent": "永久",
+      "duration_days": "{days} 日"
+    },
+    "announcement": {
+      "current_title": "📢 現在のアナウンスチャンネル",
+      "current_desc": "このサーバーのアナウンスチャンネルは {channel} に設定されています",
+      "channel_not_found": "⚠️ 設定されたアナウンスチャンネルが存在しないか、削除されています",
+      "reset_hint": "`/announcement 設定 #チャンネル` を使用してアナウンスチャンネルを再設定してください",
+      "not_set_title": "📢 アナウンスチャンネル未設定",
+      "not_set_desc": "このサーバーは公式アナウンスを受信するチャンネルが設定されていません",
+      "how_to_set": "`/announcement 設定 #チャンネル` を使用してアナウンスチャンネルを設定してください",
+      "channel_required": "設定するチャンネルを選択してください！",
+      "no_permission": "ボットに チャンネル {channel} での「メッセージを送信」または「埋め込みリンク」の権限がありません。権限を設定してからもう一度お試しください。",
+      "set_success": "✅ アナウンスチャンネルの設定に成功しました",
+      "set_success_desc": "公式アナウンスの受信チャンネルを {channel} に設定しました",
+      "about_announcements": "• ボットの重大なアップデート通知\n• 新機能のリリース情報\n• メンテナンスに関するお知らせ\n• 重要なシステム通知",
+      "test_title": "アナウンスチャンネルの設定に成功しました",
+      "test_desc": "これはテストメッセージです！\n\nこのチャンネルは Ghost Music Bot の公式アナウンスチャンネルとして正常に設定されました。\n今後、すべての重要なアップデート、新機能のリリース、メンテナンス通知などの公式アナウンスがここに送信されます。",
+      "test_footer": "Ghost Music Bot 公式アナウンスシステム",
+      "set_fail": "アナウンスチャンネルの設定中にエラーが発生しました。しばらくしてからもう一度お試しください。",
+      "not_set_remove": "このサーバーにはアナウンスチャンネルが設定されていません。",
+      "remove_success": "✅ アナウンスチャンネルの設定を削除しました",
+      "remove_success_desc": "このサーバーは公式アナウンスを受信しなくなります。\n今後再びアナウンスを受信したい場合は、`/announcement 設定 #チャンネル` を使用してください。",
+      "remove_fail": "アナウンスチャンネルの設定削除中にエラーが発生しました。しばらくしてからもう一度お試しください。"
+    }
+  },
+  
+  "utils": {
+    "ping": {
+      "title": "🏓 Pong!",
+      "latency": "レイテンシ",
+      "api_latency": "API レイテンシ",
+      "calculating": "計算中...",
+      "connection_status": "接続状態",
+      "status_excellent": "🟢 最高",
+      "status_good": "🟡 良好",
+      "status_fair": "🟠 普通",
+      "status_poor": "🔴 低下"
+    },
+    "help": {
+      "title": "🎵 Discord 音楽ボット",
+      "description": "スラッシュコマンド（Slash Commands）を使用したモダンな音楽ボット",
+      "music_features": "🎵 音楽機能",
+      "music_desc": "• `/play` - 音楽を再生\n• `/pause` - 再生を一時停止\n• `/skip` - 楽曲をスキップ\n• `/queue` - キューを表示",
+      "utils_features": "🔧 ツール機能",
+      "utils_desc": "• `/ping` - 遅延をチェック\n• `/stats` - ボットの統計を表示\n• `/info` - ボットの情報を表示",
+      "usage": "📚 使用方法",
+      "usage_desc": "詳細なコマンドを確認するには `/help music` または `/help utils` を使用してください",
+      "footer": "💡 ヒント: すべてのコマンドはスラッシュコマンドに対応しています。チャット欄に / を入力すると、利用可能なすべてのコマンドが表示されます",
+      "music_title": "🎵 音楽コマンド",
+      "utils_title": "🔧 ツールコマンド",
+      "cmd_play": "🎵 `/play`",
+      "cmd_play_desc": "音楽を再生、またはキューに追加します",
+      "cmd_play_note": "YouTube、SoundCloud などをサポート",
+      "cmd_pause": "⏸️ `/pause`",
+      "cmd_pause_desc": "現在再生中の音楽を一時停止します",
+      "cmd_resume": "▶️ `/resume`",
+      "cmd_resume_desc": "再生を再開します",
+      "cmd_skip": "⏭️ `/skip`",
+      "cmd_skip_desc": "現在の楽曲をスキップします",
+      "cmd_stop": "⏹️ `/stop`",
+      "cmd_stop_desc": "再生を停止し、キューをクリアします",
+      "cmd_queue": "📋 `/queue`",
+      "cmd_queue_desc": "再生キューを表示します",
+      "cmd_queue_note": "ページ数を指定できます",
+      "cmd_nowplaying": "🎵 `/nowplaying`",
+      "cmd_nowplaying_desc": "現在再生中の楽曲を表示します",
+      "cmd_nowplaying_note": "進捗バーと詳細情報を含みます",
+      "cmd_volume": "🔊 `/volume`",
+      "cmd_volume_desc": "音量を調整します (0-100)",
+      "cmd_shuffle": "🔀 `/shuffle`",
+      "cmd_shuffle_desc": "シャッフル再生のON/OFFを切り替えます",
+      "cmd_loop": "🔁 `/loop`",
+      "cmd_loop_desc": "ループモードを設定します",
+      "cmd_loop_note": "オフ / 1曲 / キュー",
+      "cmd_disconnect": "👋 `/disconnect`",
+      "cmd_disconnect_desc": "ボイスチャンネルから退出します",
+      "cmd_ping": "🏓 `/ping`",
+      "cmd_ping_desc": "ボットの遅延を確認します",
+      "cmd_ping_note": "WebSocket と API の遅延を表示します",
+      "cmd_stats": "📊 `/stats`",
+      "cmd_stats_desc": "ボットの統計情報を表示します",
+      "cmd_stats_note": "稼働時間、メモリ使用量など",
+      "cmd_info": "🤖 `/info`",
+      "cmd_info_desc": "ボットの詳細情報を表示します",
+      "cmd_info_note": "バージョンや機能紹介など",
+      "cmd_invite": "🔗 `/invite`",
+      "cmd_invite_desc": "ボットの招待リンクを取得します",
+      "cmd_invite_note": "ボットをあなたのサーバーに招待します"
+    },
+    "stats": {
+      "title": "📊 ボットの統計情報",
+      "uptime": "🕐 稼働時間",
+      "latency": "🏓 遅延",
+      "servers": "🏠 サーバー数",
+      "users": "👥 ユーザー数",
+      "voice_connections": "🎵 音声接続数",
+      "loaded_commands": "💬 読み込み済みコマンド",
+      "memory": "💾 メモリ",
+      "cpu": "🖥️ CPU",
+      "python": "🐍 Python",
+      "footer": "Discord.py {version} | Lavalink オーディオシステム"
+    },
+    "info": {
+      "title": "🤖 Discord 音楽ボット",
+      "description": "Lavalink テクノロジーを使用した高品質な音楽ボット",
+      "bot_name": "🏷️ ボット名",
+      "id": "🆔 ID",
+      "created_date": "📅 作成日時",
+      "music_engine": "🎵 オーディオエンジン",
+      "engine_version": "Lavalink v4.0+",
+      "dev_language": "🔧 開発言語",
+      "language_version": "Python 3.8+",
+      "discord_py": "📚 Discord.py",
+      "features_title": "✨ 主な機能",
+      "feature_1": "🎵 高品質な音楽再生",
+      "feature_2": "🔍 スマート検索システム",
+      "feature_3": "📋 再生キュー管理",
+      "feature_4": "🔊 音量コントロール",
+      "advanced_title": "🎛️ 高度な機能",
+      "feature_5": "🔁 リピート再生モード",
+      "feature_6": "🔀 シャッフル再生",
+      "feature_7": "⚡ スラッシュコマンド (Slash Commands)",
+      "platforms": "🌐 対応プラットフォーム",
+      "platforms_list": "🟢 YouTube\n🟢 SoundCloud\n🟢 Bandcamp\n🟢 Twitch",
+      "footer": "💡 全コマンドの確認は /help を使用してください | 開発者：博士助理"
+    },
+    "invite": {
+      "title": "🔗 音楽ボットを招待する",
+      "description": "**[ここをクリックしてボットを招待]({url})**",
+      "required_permissions": "📋 必要な権限",
+      "permissions_list": "• 📖 メッセージの閲覧\n• 💬 メッセージの送信\n• 🔗 埋め込みリンクの送信\n• 😀 リアクションの追加\n• 🔊 ボイスチャンネルへの接続\n• 🎤 ボイスチャンネルでの発言\n• ⚡ スラッシュコマンドの使用",
+      "feature_preview": "🎵 機能プレビュー",
+      "preview_desc": "招待後、あなたのサーバーで以下が使えます:\n`/play` 音楽を再生\n`/help` すべてのコマンドを表示",
+      "footer": "当音楽ボットをお選びいただきありがとうございます！🎶"
+    }
+  },
+  
+  "events": {
+    "joined_voice": "👋 **{channel}** に参加しました",
+    "left_voice": "👋 ボイスチャンネルから退出しました。",
+    "queue_ended": "🎵 再生終了",
+    "queue_ended_desc": "すべての楽曲の再生が終了したため、ボットはボイスチャンネルから退出しました。",
+    "queue_ended_footer": "🔧 Ghost Music ボットをご利用いただきありがとうございました",
+    "auto_leave": "⚠️ 長時間の無活動",
+    "auto_leave_desc": "ボイスチャンネル内での活動がなく、音楽が停止した状態が {minutes} 分以上続いたため、リソース節約のため自動的に退出しました。",
+    "auto_leave_footer": "🔧 省エネモード - ご理解いただきありがとうございます",
+    "track_start": "▶️ 現在再生中：**{title}**",
+    "track_end": "再生終了：**{title}**"
+  },
+  
+  "errors": {
+    "generic": "❌ リクエストの処理中にエラーが発生しました。",
+    "lavalink_not_ready": "❌ 音楽システムがまだ準備できていません。しばらくしてからもう一度お試しください。",
+    "track_load_failed": "❌ トラックの読み込みに失敗しました。",
+    "voice_connection_failed": "❌ ボイスチャンネルに接続できませんでした。",
+    "insufficient_permissions": "❌ ボットにこのボイスチャンネルへの参加/発言権限がありません。"
+  },
+  
+  "panel": {
+    "no_music": "🎵 再生中の音楽はありません",
+    "no_music_desc": "`/play` を使って音楽を再生しましょう！",
+    "now_playing": "🎵 現在再生中",
+    "author": "👤 アーティスト",
+    "duration": "⏱️ 再生時間",
+    "volume": "🔊 音量",
+    "queue_status": "📋 キューの状態",
+    "queue_count": "キューにはあと **{count}** 曲あります",
+    "loop_track": "🔂 1曲ループ",
+    "loop_queue": "🔁 キュー全曲ループ",
+    "requester": "リクエスト者: {name}",
+    "need_voice": "❌ 音楽をコントロールするにはボイスチャンネルに参加している必要があります！",
+    "same_voice_required": "❌ ボットと同じボイスチャンネルにいる必要があります！",
+    "resumed": "▶️ 再生を再開しました",
+    "paused": "⏸️ 再生を一時停止しました",
+    "skipped": "⏭️ スキップしました：**{title}**",
+    "no_music_playing": "❌ 再生中の音楽はありません",
+    "stopped": "⏹️ 再生を停止し、キューをクリアしました",
+    "playback_stopped": "⏹️ 再生が停止しました",
+    "playback_stopped_desc": "`/play` を使って音楽を再生しましょう！",
+    "loop_off": "➡️ ループをオフにしました",
+    "loop_track_enabled": "🔂 1曲ループを有効にしました",
+    "loop_queue_enabled": "🔁 キュー全曲ループを有効にしました",
+    "no_queue": "❌ キューに楽曲がありません",
+    "shuffled": "🔀 {count} 曲をシャッフルしました",
+    "operation_failed": "❌ 操作失敗"
+  }
+}
