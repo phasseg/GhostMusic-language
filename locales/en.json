@@ -454,8 +454,8 @@
     "status": "Premium settings for `{guild}`: {settings}"
   },
   "premium_admin": {
-    "grant_success": "✅ Granted premium to guild ID: {guild_id}",
-    "revoke_success": "✅ Revoked premium for guild ID: {guild_id}",
+    "grant_success": "✅ Granted premium to guild ID: {guild}",
+    "revoke_success": "✅ Revoked premium for guild ID: {guild}",
     "invalid_guild": "❌ Invalid guild ID.",
     "list_empty": "No guilds have premium enabled.",
     "listed": "Guilds with premium: {guilds}"
