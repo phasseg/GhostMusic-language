@@ -447,15 +447,21 @@
     "use_subcommand": "Use a subcommand.",
     "only_owner": "❌ Only bot owners can use this command.",
     "must_be_in_server": "❌ This command must be used in a server.",
+    "must_be_premium": "❌ This guild does not have premium enabled.",
+    "settings_only_admin": "❌ You must be a guild administrator or owner to change these settings.",
     "set_neverleave": "✅ never_leave set to `{value}` for guild: {guild}",
     "set_timeout": "✅ timeout set to `{seconds}` seconds for guild: {guild}",
     "invalid_timeout": "❌ Timeout must be >= 0 seconds.",
     "no_settings": "No premium settings for this guild.",
-    "status": "Premium settings for `{guild}`: {settings}"
+    "status": "Premium settings for `{guild}`: {settings}",
+    "settings": {
+      "title": "Premium Settings"
+    }
   },
   "premium_admin": {
     "grant_success": "✅ Granted premium to guild ID: {guild}",
     "revoke_success": "✅ Revoked premium for guild ID: {guild}",
+    "settings_saved": "✅ Premium settings saved: {settings} (guild: {guild})",
     "invalid_guild": "❌ Invalid guild ID.",
     "list_empty": "No guilds have premium enabled.",
     "listed": "Guilds with premium: {guilds}"

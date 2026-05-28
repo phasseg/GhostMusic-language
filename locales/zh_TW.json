@@ -445,15 +445,21 @@
     "use_subcommand": "請使用子指令。",
     "only_owner": "❌ 只有機器人擁有者可以使用此指令。",
     "must_be_in_server": "❌ 此指令必須在伺服器中使用。",
+    "must_be_premium": "❌ 本伺服器尚未授予 Premium。",
+    "settings_only_admin": "❌ 需要伺服器管理員或擁有者權限才能設定。",
     "set_neverleave": "✅ 已將 never_leave 設為 `{value}`（伺服器：{guild}）",
     "set_timeout": "✅ 已將 timeout 設為 `{seconds}` 秒（伺服器：{guild}）",
     "invalid_timeout": "❌ Timeout 必須 >= 0 秒。",
     "no_settings": "此伺服器尚無 Premium 設定。",
-    "status": "伺服器 `{guild}` 的 Premium 設定：{settings}"
+    "status": "伺服器 `{guild}` 的 Premium 設定：{settings}",
+    "settings": {
+      "title": "Premium 設定"
+    }
   },
   "premium_admin": {
     "grant_success": "✅ 已授予伺服器 Premium：ID {guild}",
     "revoke_success": "✅ 已撤銷伺服器 Premium：ID {guild}",
+    "settings_saved": "✅ 已儲存 Premium 設定：{settings}（伺服器：{guild}）",
     "invalid_guild": "❌ 無效的伺服器 ID。",
     "list_empty": "目前沒有伺服器擁有 Premium。",
     "listed": "擁有 Premium 的伺服器：{guilds}"
