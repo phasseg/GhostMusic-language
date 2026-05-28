@@ -451,6 +451,13 @@
     "no_settings": "此伺服器尚無 Premium 設定。",
     "status": "伺服器 `{guild}` 的 Premium 設定：{settings}"
   },
+  "premium_admin": {
+    "grant_success": "✅ 已授予伺服器 Premium：ID {guild_id}",
+    "revoke_success": "✅ 已撤銷伺服器 Premium：ID {guild_id}",
+    "invalid_guild": "❌ 無效的伺服器 ID。",
+    "list_empty": "目前沒有伺服器擁有 Premium。",
+    "listed": "擁有 Premium 的伺服器：{guilds}"
+  },
   
   "events": {
     "joined_voice": "👋 已加入 **{channel}**",
