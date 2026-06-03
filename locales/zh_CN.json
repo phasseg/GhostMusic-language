@@ -1,5 +1,6 @@
-"_language_name": "简体中文",
-  "_language_emoji": "🇨🇳",
+ {
+   "_language_name": "简体中文",
+   "_language_emoji": "🇨🇳",
   
   "common": {
     "error": "❌ 错误",
@@ -447,6 +448,31 @@
     }
   },
   
+  "premium": {
+    "use_subcommand": "请使用子命令。",
+    "only_owner": "❌ 只有机器人所有者可以使用此命令。",
+    "must_be_in_server": "❌ 此命令必须在服务器中使用。",
+    "must_be_premium": "❌ 本服务器尚未授予 Premium。",
+    "settings_only_admin": "❌ 需要服务器管理员或所有者权限才能设置。",
+    "set_neverleave": "✅ 已将 never_leave 设置为 `{value}`（服务器：{guild}）",
+    "set_timeout": "✅ 已将 timeout 设置为 `{seconds}` 秒（服务器：{guild}）",
+    "invalid_timeout": "❌ Timeout 必须 >= 0 秒。",
+    "no_settings": "此服务器尚无 Premium 设置。",
+    "status": "服务器 `{guild}` 的 Premium 设置：{settings}",
+    "settings": {
+      "title": "Premium 设置"
+    }
+  },
+
+   "premium_admin": {
+    "grant_success": "✅ 已授予服务器 Premium：ID {guild}",
+    "revoke_success": "✅ 已撤销服务器 Premium：ID {guild}",
+    "settings_saved": "✅ 已保存 Premium 设置：{settings}（服务器：{guild}）",
+    "invalid_guild": "❌ 无效的服务器 ID。",
+    "list_empty": "目前没有服务器拥有 Premium。"
+    "listed": "拥有 Premium 的服务器：{guilds}"
+  },
+
   "events": {
     "joined_voice": "👋 已加入 **{channel}**",
     "left_voice": "👋 已离开语音频道。",
