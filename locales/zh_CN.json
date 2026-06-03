@@ -1,0 +1,499 @@
+"_language_name": "简体中文",
+  "_language_emoji": "🇨🇳",
+  
+  "common": {
+    "error": "❌ 错误",
+    "success": "✅ 成功",
+    "warning": "⚠️ 警告",
+    "loading": "⏳ 加载中...",
+    "no_permission": "你没有权限使用此命令。",
+    "bot_no_permission": "机器人没有足够的权限。",
+    "not_in_voice": "你需要先加入语音频道！",
+    "bot_not_in_voice": "机器人不在任何语音频道中。",
+    "same_voice": "你必须与机器人在同一个语音频道！",
+    "nothing_playing": "当前没有正在播放的音乐。",
+    "invalid_input": "无效的输入。",
+    "command_cooldown": "命令冷却中，请等待 {time} 秒。"
+  },
+  
+  "language": {
+    "title": "🌐 语言设置",
+    "current": "当前语言：**{language}**",
+    "select_prompt": "请选择你偏好的语言：",
+    "changed": "✅ 语言已更改为 **{language}**",
+    "guild_changed": "✅ 服务器语言已更改为 **{language}**",
+    "invalid": "❌ 无效的语言代码。可用语言：{languages}",
+    "user_setting": "👤 个人语言设置",
+    "guild_setting": "🏠 服务器语言设置",
+    "available": "可用语言",
+    "switch_to": "切换至 {language}",
+    "select_placeholder": "选择你的语言 / Select your language..."
+  },
+  
+  "music": {
+    "blacklisted": {
+      "title": "❌ 您已被列入黑名单",
+      "description": "您无法使用此音乐功能",
+      "reason": "原因",
+      "footer": "如有疑问，请联系服务器管理员"
+    },
+    
+    "queue_ended": {
+      "title": "🎵 播放完毕",
+      "description": "所有歌曲播放完毕，机器人已离开语音频道。",
+      "footer": "🔧 感谢使用 Ghost Music 音乐机器人"
+    },
+    
+    "error": {
+      "title": "❌ 发生错误",
+      "description": "{error}"
+    },
+    
+    "playlist_empty": {
+      "title": "❌ 播放列表为空",
+      "description": "此播放列表没有任何歌曲"
+    },
+    
+    "playlist_added": {
+      "title": "📋 已加入 YouTube 播放列表",
+      "songs_count": "📊 歌曲数量",
+      "songs_count_value": "{count} 首",
+      "source": "🎵 来源",
+      "queue_position": "📍 队列位置",
+      "queue_range": "#{start} ~ #{end}",
+      "preview": "🎵 预览（前3首歌曲）",
+      "more_songs": "... 还有 {count} 首歌曲",
+      "requester": "点播者: {name}"
+    },
+    
+    "play": {
+      "title": "🎵 已加入播放队列",
+      "now_playing": "🎶 正在播放",
+      "searching": "🔍 搜索中：`{query}`",
+      "no_results": "❌ 找不到结果：`{query}`",
+      "select_track": "请选择要播放的歌曲：",
+      "search_results": "🔍 YouTube 搜索结果",
+      "search_error": "YouTube 搜索时发生错误。",
+      "youtube_only": "此机器人仅支持 YouTube 链接。",
+      "load_failed": "无法加载 YouTube 链接。",
+      "added": "已将 **{title}** 加入播放队列",
+      "playlist_added": "📋 已从播放列表 **{name}** 加入 {count} 首歌曲",
+      "track_info": "**时长：** {duration}\n**点播者：** {requester}",
+      "position": "队列位置：**#{position}**",
+      "author": "作者",
+      "duration": "时长",
+      "queue_position": "队列位置",
+      "source": "🎵 来源",
+      "requester": "点播者: {name}",
+      "select_footer": "请从下方选择歌曲"
+    },
+    
+    "pause": {
+      "success": "⏸️ 已暂停当前播放的歌曲。",
+      "already_paused": "⏸️ 已经是暂停状态。",
+      "resumed": "▶️ 已恢复播放。"
+    },
+    
+    "resume": {
+      "not_paused": "❌ 音乐没有暂停。"
+    },
+    
+    "skip": {
+      "success": "⏭️ 已跳过 **{title}**",
+      "no_next": "播放队列中没有更多歌曲。",
+      "skipped_by": "跳过者",
+      "vote_title": "⏭️ 跳过投票",
+      "vote_description": "当前语音频道有 {count} 位真人成员，至少需要 {required} 票同意才能跳过。\n请使用下方按钮投票。",
+      "vote_status_title": "📊 票数状态",
+      "vote_yes": "同意",
+      "vote_no": "反对",
+      "vote_started": "⏭️ 已发起跳过投票。",
+      "vote_recorded": "✅ 已记录你的投票。",
+      "vote_closed": "投票已结束。",
+      "vote_passed": "✅ 投票通过，已跳过 **{title}**",
+      "vote_failed": "❌ 投票未通过，歌曲维持播放。",
+      "vote_timeout": "⌛ 投票超时，歌曲维持播放。"
+    },
+    
+    "stop": {
+      "success": "⏹️ 已停止播放并清空队列。",
+      "left_voice": "👋 已离开语音频道。"
+    },
+    
+    "queue": {
+      "title": "📋 播放队列",
+      "now_playing": "**正在播放：**",
+      "up_next": "**接下来播放：**",
+      "empty": "播放队列是空的。使用 `/play` 添加歌曲！",
+      "page": "第 {current}/{total} 页",
+      "total_tracks": "共 {count} 首歌曲 | 总时长：{duration}",
+      "track_line": "`{num}.` [{title}]({url}) `[{duration}]` - {requester}"
+    },
+    
+    "nowplaying": {
+      "title": "🎵 正在播放",
+      "now_playing": "🎵 正在播放",
+      "not_playing": "❌ 当前没有正在播放的音乐",
+      "requester": "点播者",
+      "author": "作者",
+      "duration": "时长",
+      "time_format": "{current}/{total}",
+      "progress": "进度",
+      "status": "状态",
+      "status_playing": "▶️ 播放中",
+      "status_paused": "⏸️ 已暂停",
+      "volume": "音量",
+      "queue_length": "队列长度",
+      "queue_count": "{count} 首",
+      "loop": "循环模式",
+      "loop_off": "关闭",
+      "loop_track": "单曲循环",
+      "loop_queue": "列表循环"
+    },
+    
+    "volume": {
+      "title": "🔊 音量控制",
+      "changed": "{icon} 音量已设置为 **{volume}%**",
+      "current": "当前音量：**{volume}%**",
+      "invalid": "❌ 无效音量",
+      "invalid_desc": "音量必须在 0 到 100 之间",
+      "no_player": "❌ 没有活跃的播放器"
+    },
+    
+    "loop": {
+      "title": "🔁 循环模式已更改",
+      "off": "🔁 循环模式已关闭。",
+      "off_desc": "循环模式：**关闭**",
+      "track": "🔂 单曲循环模式已启用。",
+      "track_desc": "循环模式：**单曲循环**",
+      "queue": "🔁 列表循环模式已启用。",
+      "queue_desc": "循环模式：**列表循环**",
+      "invalid": "❌ 无效的循环模式。使用：off、track 或 queue。",
+      "no_player": "❌ 没有活跃的播放器"
+    },
+    
+    "shuffle": {
+      "title": "🔀 随机播放",
+      "success": "🔀 已随机打乱队列中的 {count} 首歌曲。",
+      "enabled": "随机播放：**已开启**",
+      "disabled": "随机播放：**已关闭**",
+      "empty": "❌ 播放队列是空的。"
+    },
+    
+    "disconnect": {
+      "title": "👋 已离开语音频道",
+      "success": "机器人已离开语音频道并清空队列",
+      "not_connected": "❌ 未连接语音频道",
+      "no_permission": "❌ 权限不足",
+      "same_channel_required": "你需要在同一个语音频道"
+    },
+    
+    "musicnode": {
+      "title": "🎵 Lavalink 节点状态",
+      "not_initialized": "❌ Lavalink 未初始化",
+      "not_initialized_desc": "Lavalink 服务尚未启动或连接失败",
+      "no_nodes": "❌ 没有可用的节点",
+      "no_nodes_desc": "当前没有连接 any Lavalink 节点",
+      "total_nodes": "当前共有 **{count}** 个节点",
+      "node_name": "节点 #{num}：{name}",
+      "status": "**状态**",
+      "status_online": "在线",
+      "status_offline": "离线",
+      "region": "🏷️ **区域**",
+      "players": "🎵 **播放器数量**",
+      "playing": "▶️ **播放中**",
+      "memory": "💾 **内存使用**",
+      "memory_format": "{used}MB / {total}MB",
+      "cpu": "🖥️ **CPU 使用率**",
+      "cpu_format": "{usage}%",
+      "uptime": "⏰ **运行时间**",
+      "uptime_format": "{hours} 小时",
+      "quality": "连接质量",
+      "quality_excellent": "🟢 优秀",
+      "quality_good": "🟡 良好",
+      "quality_fair": "🟠 一般",
+      "quality_poor": "🔴 较差"
+    },
+    
+    "remove": {
+      "success": "🗑️ 已从队列中移除 **{title}**。",
+      "invalid": "❌ 无效的歌曲编号。",
+      "empty": "❌ 播放队列是空的。"
+    },
+    
+    "clear": {
+      "success": "🗑️ 已从队列中清除 {count} 首歌曲。",
+      "empty": "❌ 播放队列已经是空的。"
+    },
+    
+    "seek": {
+      "success": "⏩ 已跳转到 {time}",
+      "invalid": "❌ 无效的时间格式。使用：MM:SS 或秒数。",
+      "out_of_range": "❌ 时间超过歌曲长度。"
+    },
+    
+    "lyrics": {
+      "title": "📜 歌词",
+      "searching": "🔍 搜索歌词中...",
+      "not_found": "❌ 找不到歌词：**{title}**",
+      "error": "❌ 获取歌词失败。"
+    }
+  },
+  
+  "playlist": {
+    "saved": "💾 已将当前队列保存为播放列表：**{name}**",
+    "loaded": "📋 已加载播放列表：**{name}** ({count} 首歌曲)",
+    "deleted": "🗑️ 已删除播放列表：**{name}**",
+    "not_found": "❌ 找不到播放列表：**{name}**",
+    "list_title": "📚 你的播放列表",
+    "list_empty": "你还没有保存任何播放列表。",
+    "already_exists": "❌ 播放列表 **{name}** 已经存在。"
+  },
+  
+  "admin": {
+    "prefix_changed": "✅ 命令前缀已变更为：`{prefix}`",
+    "settings_title": "⚙️ 机器人设置",
+    "reload_success": "🔄 已重新加载扩展功能：**{extension}**",
+    "reload_failed": "❌ 重新加载扩展功能失败：**{extension}**",
+    "blacklist_added": "🚫 已将 **{user}** 加入黑名单。",
+    "blacklist_removed": "✅ 已将 **{user}** 从黑名单移除。",
+    "blacklisted": "❌ 你已被列入黑名单，无法使用此机器人。",
+    "blacklist": {
+      "operation_failed": "❌ 操作失败",
+      "cannot_blacklist_self": "你不能拉黑自己！",
+      "cannot_blacklist_bot": "不能拉黑机器人！",
+      "cannot_blacklist_admin": "不能拉黑服务器管理员！",
+      "no_permission": "❌ 权限不足",
+      "owner_only": "只有 Bot 拥有者可以执行全局拉黑！",
+      "add_success": "🚫 已将用户加入黑名单",
+      "add_success_desc": "**用户：** {user}\n**范围：** {scope}\n**原因：** {reason}\n**期限：** {duration}",
+      "add_fail": "将用户加入黑名单失败",
+      "remove_success": "✅ 黑名单已移除",
+      "remove_success_desc": "**用户：** {user}\n**移除范围：** {scope} 黑名单",
+      "remove_fail": "从黑名单移除失败",
+      "user_not_blacklisted": "❌ 不在黑名单中",
+      "user_not_blacklisted_desc": "用户 **{user}** 不在黑名单中",
+      "info_title": "📋 黑名单信息 - {user}",
+      "info_scope": "**范围：**",
+      "info_reason": "**原因：**",
+      "info_added_at": "**加入时间：**",
+      "info_expires_at": "**到期时间：**",
+      "info_permanent": "永久",
+      "info_not_found": "用户不在 {scope} 黑名单中",
+      "list_title": "📋 {scope} 黑名单",
+      "list_empty": "{scope} 黑名单中没有用户",
+      "list_entry": "• **{user}** (ID: `{id}`)\n  原因：{reason}\n  加入时间：{date}",
+      "list_count": "共 {count} 位用户",
+      "list_page_footer": "第 {current}/{total} 页 | 使用 /blacklist check <用户> 查看详细信息",
+      "list_item_title": "{index}. 用户 ID: {user_id}",
+      "list_item_reason": "**原因**: {reason}",
+      "list_item_added": "**加入时间**: {added_at}",
+      "list_item_expires": "**到期**: {expires_at}",
+      "check_blacklisted_title": "🚫 黑名单用户",
+      "check_blacklisted_desc": "{user} 目前在黑名单中",
+      "check_not_blacklisted_title": "✅ 正常用户",
+      "check_not_blacklisted_desc": "{user} 不在黑名单中",
+      "check_field_reason": "原因",
+      "check_field_added_at": "加入时间",
+      "check_field_expires": "期限",
+      "check_permanent": "永久拉黑",
+      "check_expires_at": "到期时间: {time}",
+      "cleanup_title": "🧹 清理完成",
+      "cleanup_desc": "已清理 {count} 个过期的黑名单条目",
+      "error_no_permission": "❌ 权限不足",
+      "error_no_permission_desc": "你需要“管理员”权限才能使用此命令！",
+      "error_title": "❌ 发生错误",
+      "error_desc": "执行命令时发生错误：{error}",
+      "scope_server": "服务器",
+      "scope_global": "全局",
+      "duration_permanent": "永久",
+      "duration_days": "{days} 天"
+    },
+    
+     "announcement": {
+      "current_title": "📢 当前的公告频道",
+      "current_desc": "本服务器已设置公告频道为 {channel}",
+      "channel_not_found": "⚠️ 设置的公告频道已不存在或已被删除",
+      "reset_hint": "请使用 `/announcement 设置 #频道` 重新设置公告频道",
+      "not_set_title": "📢 公告频道未设置",
+      "not_set_desc": "本服务器尚未设置接收官方公告的频道",
+      "how_to_set": "使用 `/announcement 设置 #频道` 来设置公告频道",
+      "channel_required": "请选择要设置的频道！",
+      "no_permission": "机器人在频道 {channel} 中没有“发送消息”或“嵌入链接”权限，请先配置权限后再试。",
+      "set_success": "✅ 公告频道设置成功",
+      "set_success_desc": "已将 {channel} 设置为接收官方公告的频道",
+      "about_announcements": "• 机器人重大更新通知\n• 新功能发布信息\n• 维护公告\n• 重要系统通知",
+      "test_title": "公告频道设置成功",
+      "test_desc": "这是一条测试消息！\n\n此频道已成功设置为 Ghost Music Bot 的官方公告频道。\n未来所有重要更新、新功能发布、维护通知等官方公告都会发送到这里。",
+      "test_footer": "Ghost Music Bot 官方公告系统",
+      "set_fail": "设置公告频道时发生错误，请稍后再试。",
+      "not_set_remove": "本服务器尚未设置公告频道。",
+      "remove_success": "✅ 已移除公告频道设置",
+      "remove_success_desc": "本服务器将不再接收官方公告。\n若未来想重新接收公告，请使用 `/announcement 设置 #频道`",
+      "remove_fail": "移除公告频道设置时发生错误，请稍后再试。"
+},
+  "utils": {
+    "ping": {
+      "title": "🏓 Pong!",
+      "latency": "延迟",
+      "api_latency": "API 延迟",
+      "calculating": "计算中...",
+      "connection_status": "连接状态",
+      "status_excellent": "🟢 极佳",
+      "status_good": "🟡 良好",
+      "status_fair": "🟠 一般",
+      "status_poor": "🔴 较差"
+    },
+    
+    "help": {
+      "title": "🎵 Discord 音乐机器人",
+      "description": "使用 Slash Commands 的现代音乐机器人",
+      "music_features": "🎵 音乐功能",
+      "music_desc": "• `/play` - 播放音乐\n• `/pause` - 暂停播放\n• `/skip` - 跳过歌曲\n• `/queue` - 查看队列",
+      "utils_features": "🔧 工具功能",
+      "utils_desc": "• `/ping` - 检查延迟\n• `/stats` - 机器人统计\n• `/info` - 机器人信息",
+      "usage": "📚 使用方式",
+      "usage_desc": "使用 `/help music` 或 `/help utils` 查看详细命令",
+      "footer": "💡 提示：所有命令都使用 Slash Commands，在聊天框输入 / 即可看到所有可用命令",
+      "music_title": "🎵 音乐命令",
+      "utils_title": "🔧 工具命令",
+      "cmd_play": "🎵 `/play`",
+      "cmd_play_desc": "播放音乐并添加到队列",
+      "cmd_play_note": "支持 YouTube、SoundCloud 等",
+      "cmd_pause": "⏸️ `/pause`",
+      "cmd_pause_desc": "暂停当前播放 of 音乐",
+      "cmd_resume": "▶️ `/resume`",
+      "cmd_resume_desc": "继续播放",
+      "cmd_skip": "⏭️ `/skip`",
+      "cmd_skip_desc": "跳过当前歌曲",
+      "cmd_stop": "⏹️ `/stop`",
+      "cmd_stop_desc": "停止播放并清空队列",
+      "cmd_queue": "📋 `/queue`",
+      "cmd_queue_desc": "显示播放队列",
+      "cmd_queue_note": "可指定页数",
+      "cmd_nowplaying": "🎵 `/nowplaying`",
+      "cmd_nowplaying_desc": "显示当前播放歌曲",
+      "cmd_nowplaying_note": "包含进度条和详细信息",
+      "cmd_volume": "🔊 `/volume`",
+      "cmd_volume_desc": "调整音量 (0-100)",
+      "cmd_shuffle": "🔀 `/shuffle`",
+      "cmd_shuffle_desc": "开关随机播放",
+      "cmd_loop": "🔁 `/loop`",
+      "cmd_loop_desc": "设置循环模式",
+      "cmd_loop_note": "关闭/单曲/队列",
+      "cmd_disconnect": "👋 `/disconnect`",
+      "cmd_disconnect_desc": "离开语音频道",
+      "cmd_ping": "🏓 `/ping`",
+      "cmd_ping_desc": "检查机器人延迟",
+      "cmd_ping_note": "显示 WebSocket 和 API 延迟",
+      "cmd_stats": "📊 `/stats`",
+      "cmd_stats_desc": "显示机器人统计",
+      "cmd_stats_note": "运行时间、内存使用等",
+      "cmd_info": "🤖 `/info`",
+      "cmd_info_desc": "显示机器人信息",
+      "cmd_info_note": "版本、功能介绍等",
+      "cmd_invite": "🔗 `/invite`",
+      "cmd_invite_desc": "获取机器人邀请链接",
+      "cmd_invite_note": "邀请机器人到你的服务器"
+    },
+
+        "stats": {
+      "title": "📊 机器人统计",
+      "uptime": "🕐 运行时间",
+      "latency": "🏓 延迟",
+      "servers": "🏠 服务器数",
+      "users": "👥 用户数",
+      "voice_connections": "🎵 语音连接",
+      "loaded_commands": "💬 已加载命令",
+      "memory": "💾 内存",
+      "cpu": "🖥️ CPU",
+      "python": "🐍 Python",
+      "footer": "Discord.py {version} | Lavalink 音乐系统"
+    },
+
+        "info": {
+      "title": "🤖 Discord 音乐机器人",
+      "description": "使用 Lavalink 技术的高品质音乐机器人",
+      "bot_name": "🏷️ 机器人名称",
+      "id": "🆔 ID",
+      "created_date": "📅 创建日期",
+      "music_engine": "🎵 音乐引擎",
+      "engine_version": "Lavalink v4.0+",
+      "dev_language": "🔧 开发语言",
+      "language_version": "Python 3.8+",
+      "discord_py": "📚 Discord.py",
+      "features_title": "✨ 功能特色",
+      "feature_1": "🎵 高品质音乐播放",
+      "feature_2": "🔍 智能搜索系统",
+      "feature_3": "📋 播放队列管理",
+      "feature_4": "🔊 音量控制",
+      "advanced_title": "🎛️ 进阶功能",
+      "feature_5": "🔁 重复播放模式",
+      "feature_6": "🔀 随机播放",
+      "feature_7": "⚡ Slash Commands",
+      "platforms": "🌐 支持平台",
+      "platforms_list": "🟢 YouTube\n🟢 SoundCloud\n🟢 Bandcamp\n🟢 Twitch",
+      "footer": "💡 使用 /help 查看所有可用命令 | 开发者：博士助理"
+    },
+
+        "invite": {
+      "title": "🔗 邀请音乐机器人",
+      "description": "**[点击这里邀请机器人]({url})**",
+      "required_permissions": "📋 所需权限",
+      "permissions_list": "• 📖 读取消息\n• 💬 发送消息\n• 🔗 嵌入链接\n• 😀 添加反应\n• 🔊 连接语音\n• 🎤 在语音中说话\n• ⚡ 使用斜线命令",
+      "feature_preview": "🎵 功能预览",
+      "preview_desc": "邀请后即可在你的服务器中使用:\n`/play` 播放音乐\n`/help` 查看所有命令",
+      "footer": "感谢你选择我们的音乐机器人！🎶"
+    }
+  },
+  
+  "events": {
+    "joined_voice": "👋 已加入 **{channel}**",
+    "left_voice": "👋 已离开语音频道。",
+    "queue_ended": "🎵 播放完毕",
+    "queue_ended_desc": "所有歌曲播放完毕，机器人已离开语音频道。",
+    "queue_ended_footer": "🔧 感谢使用 Ghost Music 音乐机器人",
+    "auto_leave": "⚠️ 长时间无活动",
+    "auto_leave_desc": "由于语音频道无 activity 且无音乐播放超过 {minutes} 分钟，机器人已自动离开以节省资源。",
+    "auto_leave_footer": "🔧 省电模式 - 感谢您的理解",
+    "track_start": "▶️ 正在播放：**{title}**",
+    "track_end": "播放完毕：**{title}**"
+  },
+  
+  "errors": {
+    "generic": "❌ 处理你的请求时发生错误。",
+    "lavalink_not_ready": "❌ 音乐系统尚未就绪，请稍后再试。",
+    "track_load_failed": "❌ 加载音轨失败。",
+    "voice_connection_failed": "❌ 无法连接到语音频道。",
+    "insufficient_permissions": "❌ 机器人没有权限加入此语音频道或在其中发言。"
+  },
+
+    "panel": {
+    "no_music": "🎵 没有正在播放的音乐",
+    "no_music_desc": "使用 `/play` 来播放音乐！",
+    "now_playing": "🎵 正在播放",
+    "author": "👤 作者",
+    "duration": "⏱️ 时长",
+    "volume": "🔊 音量",
+    "queue_status": "📋 队列状态",
+    "queue_count": "队列中还有 **{count}** 首歌曲",
+    "loop_track": "🔂 单曲循环",
+    "loop_queue": "🔁 列表循环",
+    "requester": "点播者: {name}",
+    "need_voice": "❌ 你需要在语音频道中才能控制音乐！",
+    "same_voice_required": "❌ 你必须与机器人在同一个语音频道！",
+    "resumed": "▶️ 已恢复播放",
+    "paused": "⏸️ 已暂停播放",
+    "skipped": "⏭️ 已跳过：**{title}**",
+    "no_music_playing": "❌ 没有正在播放的音乐",
+    "stopped": "⏹️ 已停止播放并清空队列",
+    "playback_stopped": "⏹️ 播放已停止",
+    "playback_stopped_desc": "使用 `/play` 来播放音乐！",
+    "loop_off": "➡️ 已关闭循环",
+    "loop_track_enabled": "🔂 已开启单曲循环",
+    "loop_queue_enabled": "🔁 已开启列表循环",
+    "no_queue": "❌ 队列中没有歌曲",
+    "shuffled": "🔀 已随机打乱 {count} 首歌曲",
+    "operation_failed": "❌ 操作失败"
+  }
+}
