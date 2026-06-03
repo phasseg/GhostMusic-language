@@ -48,3 +48,9 @@
 如果你想新增日文翻譯，可以建立：
 ```text
 locales/ja.json
+```
+
+## 目前已有的語言
+- `locales/en.json` (英文基準檔)
+- `locales/zh_TW.json` (繁體中文)
+- `locales/ja.json` (日文)感謝XileBing翻譯貢獻
