@@ -1,7 +1,6 @@
 {
   "_language_name": "English",
   "_language_emoji": "🇬🇧",
-  
   "common": {
     "error": "❌ Error",
     "success": "✅ Success",
@@ -16,7 +15,6 @@
     "invalid_input": "Invalid input.",
     "command_cooldown": "Command on cooldown. Please wait {time} seconds."
   },
-  
   "language": {
     "title": "🌐 Language Settings",
     "current": "Current Language: **{language}**",
@@ -30,7 +28,6 @@
     "switch_to": "Switch to {language}",
     "select_placeholder": "Select your language / 選擇你的語言..."
   },
-  
   "music": {
     "blacklisted": {
       "title": "❌ You are Blacklisted",
@@ -38,23 +35,19 @@
       "reason": "Reason",
       "footer": "If you have questions, please contact the server administrator"
     },
-    
     "queue_ended": {
       "title": "🎵 Playback Complete",
       "description": "All songs have finished playing, bot has left the voice channel.",
       "footer": "🔧 Thank you for using Ghost Music Bot"
     },
-    
     "error": {
       "title": "❌ Error Occurred",
       "description": "{error}"
     },
-    
     "playlist_empty": {
       "title": "❌ Playlist is Empty",
       "description": "This playlist contains no songs"
     },
-    
     "playlist_added": {
       "title": "📋 YouTube Playlist Added",
       "songs_count": "📊 Song Count",
@@ -66,16 +59,15 @@
       "more_songs": "... and {count} more songs",
       "requester": "Requested by: {name}"
     },
-    
     "play": {
       "title": "🎵 Added to Queue",
       "now_playing": "🎶 Now Playing",
       "searching": "🔍 Searching for: `{query}`",
       "no_results": "❌ No results found for: `{query}`",
       "select_track": "Please select a track to play:",
-      "search_results": "🔍 YouTube Search Results",
+      "search_results": "🔍 {source} Search Results",
       "search_error": "An error occurred during YouTube search.",
-      "youtube_only": "This bot only supports YouTube links.",
+      "youtube_only": "Only YouTube, Spotify, Apple Music and SoundCloud links are supported.",
       "load_failed": "Failed to load the YouTube link.",
       "added": "Added **{title}** to the queue",
       "playlist_added": "📋 Added {count} tracks to the queue from playlist: **{name}**",
@@ -86,25 +78,23 @@
       "queue_position": "Queue Position",
       "source": "🎵 Source",
       "requester": "Requested by: {name}",
-      "select_footer": "Please select a song from below"
+      "select_footer": "Please select a song from below",
+      "select_timeout": "Pick a track below. This menu is deleted if nothing is chosen within 1 minute."
     },
-    
     "pause": {
       "success": "⏸️ Paused the current track.",
       "already_paused": "⏸️ Already paused.",
       "resumed": "▶️ Resumed playback."
     },
-    
     "resume": {
       "not_paused": "❌ Music is not paused."
     },
-    
     "skip": {
       "success": "⏭️ Skipped **{title}**",
       "no_next": "No more tracks in queue.",
       "skipped_by": "Skipped by",
       "vote_title": "⏭️ Skip Vote",
-      "vote_description": "There are {count} real members in the voice channel. At least {required} yes votes are needed to skip.\nUse the buttons below to vote.",
+      "vote_description": "There are {count} members in the voice channel. The track is skipped once **more than half ({required} votes)** agree.\nThe starter counts as a yes vote, and the requester can skip instantly by voting yes.",
       "vote_status_title": "📊 Vote Status",
       "vote_yes": "Yes",
       "vote_no": "No",
@@ -113,14 +103,14 @@
       "vote_closed": "The vote is already closed.",
       "vote_passed": "✅ Vote passed, **{title}** has been skipped.",
       "vote_failed": "❌ Vote did not pass, the track will keep playing.",
-      "vote_timeout": "⌛ Vote timed out, the track will keep playing."
+      "vote_timeout": "⌛ Vote timed out, the track will keep playing.",
+      "vote_ends": "⌛ Vote ends",
+      "vote_track_changed": "⏭️ The track has already changed, this vote was cancelled."
     },
-    
     "stop": {
       "success": "⏹️ Stopped playback and cleared the queue.",
       "left_voice": "👋 Left voice channel."
     },
-    
     "queue": {
       "title": "📋 Music Queue",
       "now_playing": "**Now Playing:**",
@@ -130,7 +120,6 @@
       "total_tracks": "Total: {count} tracks | Duration: {duration}",
       "track_line": "`{num}.` [{title}]({url}) `[{duration}]` - {requester}"
     },
-    
     "nowplaying": {
       "title": "🎵 Now Playing",
       "now_playing": "🎵 Now Playing",
@@ -151,7 +140,6 @@
       "loop_track": "Track",
       "loop_queue": "Queue"
     },
-    
     "volume": {
       "title": "🔊 Volume Control",
       "changed": "{icon} Volume set to **{volume}%**",
@@ -160,7 +148,6 @@
       "invalid_desc": "Volume must be between 0 and 100",
       "no_player": "❌ No active player"
     },
-    
     "loop": {
       "title": "🔁 Loop Mode Changed",
       "off": "🔁 Loop mode disabled.",
@@ -172,7 +159,6 @@
       "invalid": "❌ Invalid loop mode. Use: off, track, or queue.",
       "no_player": "❌ No active player"
     },
-    
     "shuffle": {
       "title": "🔀 Shuffle Mode",
       "success": "🔀 Shuffled {count} tracks in the queue.",
@@ -180,7 +166,6 @@
       "disabled": "Shuffle: **Disabled**",
       "empty": "❌ Queue is empty"
     },
-    
     "disconnect": {
       "title": "👋 Disconnected",
       "success": "Bot has left the voice channel and cleared the queue",
@@ -188,7 +173,6 @@
       "no_permission": "❌ Insufficient Permission",
       "same_channel_required": "You must be in the same voice channel"
     },
-    
     "musicnode": {
       "title": "🎵 Lavalink Node Status",
       "not_initialized": "❌ Lavalink Not Initialized",
@@ -215,24 +199,20 @@
       "quality_fair": "🟠 Fair",
       "quality_poor": "🔴 Poor"
     },
-    
     "remove": {
       "success": "🗑️ Removed **{title}** from the queue.",
       "invalid": "❌ Invalid track number.",
       "empty": "❌ Queue is empty."
     },
-    
     "clear": {
       "success": "🗑️ Cleared {count} tracks from the queue.",
       "empty": "❌ Queue is already empty."
     },
-    
     "seek": {
       "success": "⏩ Seeked to {time}",
       "invalid": "❌ Invalid time format. Use: MM:SS or seconds.",
       "out_of_range": "❌ Time exceeds track duration."
     },
-    
     "lyrics": {
       "title": "📜 Lyrics",
       "searching": "🔍 Searching for lyrics...",
@@ -249,7 +229,6 @@
     "list_empty": "You don't have any saved playlists.",
     "already_exists": "❌ Playlist **{name}** already exists."
   },
-  
   "admin": {
     "prefix_changed": "✅ Command prefix changed to: `{prefix}`",
     "settings_title": "⚙️ Bot Settings",
@@ -332,7 +311,6 @@
       "remove_fail": "An error occurred while removing the announcement channel configuration. Please try again later."
     }
   },
-  
   "utils": {
     "ping": {
       "title": "🏓 Pong!",
@@ -466,7 +444,6 @@
     "list_empty": "No guilds have premium enabled.",
     "listed": "Guilds with premium: {guilds}"
   },
-  
   "events": {
     "joined_voice": "👋 Joined **{channel}**",
     "left_voice": "👋 Left voice channel.",
@@ -479,7 +456,6 @@
     "track_start": "▶️ Now playing: **{title}**",
     "track_end": "Finished playing: **{title}**"
   },
-  
   "errors": {
     "generic": "❌ An error occurred while processing your request.",
     "lavalink_not_ready": "❌ Music system is not ready. Please try again later.",
@@ -487,7 +463,6 @@
     "voice_connection_failed": "❌ Failed to connect to voice channel.",
     "insufficient_permissions": "❌ Bot doesn't have permission to join/speak in this voice channel."
   },
-  
   "panel": {
     "no_music": "🎵 No music playing",
     "no_music_desc": "Use `/play` to play music!",
@@ -514,6 +489,21 @@
     "loop_queue_enabled": "🔁 Queue loop enabled",
     "no_queue": "❌ No tracks in queue",
     "shuffled": "🔀 Shuffled {count} track(s)",
-    "operation_failed": "❌ Operation failed"
+    "operation_failed": "❌ Operation failed",
+    "status_playing": "▶️ Now Playing · {source}",
+    "status_paused": "⏸️ Paused · {source}",
+    "by_author": "👤 **{author}**",
+    "loop_mode": "🔁 Loop Mode",
+    "loop_none": "➡️ Off",
+    "requester_title": "🙋 Requested by",
+    "next_up": "⏭️ Up Next",
+    "next_none": "Nothing queued — use `/play` to add more music!",
+    "footer": "Ghost Music · Source: {source}",
+    "btn_pause": "Pause",
+    "btn_resume": "Resume",
+    "btn_skip": "Skip",
+    "btn_stop": "Stop",
+    "btn_loop": "Loop",
+    "btn_shuffle": "Shuffle"
   }
 }
