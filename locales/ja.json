@@ -1,7 +1,6 @@
 {
   "_language_name": "日本語",
   "_language_emoji": "🇯🇵",
-  
   "common": {
     "error": "❌ エラー",
     "success": "✅ 成功",
@@ -16,7 +15,6 @@
     "invalid_input": "無効な入力です。",
     "command_cooldown": "クールダウン中です。{time}秒お待ちください。"
   },
-  
   "language": {
     "title": "🌐 言語設定",
     "current": "現在の言語: **{language}**",
@@ -30,7 +28,6 @@
     "switch_to": "{language}に切り替える",
     "select_placeholder": "言語を選択してください / Select your language..."
   },
-  
   "music": {
     "blacklisted": {
       "title": "❌ ブラックリストに登録されています",
@@ -38,23 +35,19 @@
       "reason": "理由",
       "footer": "ご不明な点がございましたら、サーバー管理者にお問い合わせください。"
     },
-    
     "queue_ended": {
       "title": "🎵 再生終了",
       "description": "すべての曲の再生が終了したため、Botはボイスチャンネルから退出しました。",
       "footer": "🔧 Ghost Music Botをご利用いただきありがとうございます。"
     },
-    
     "error": {
       "title": "❌ エラーが発生しました",
       "description": "{error}"
     },
-    
     "playlist_empty": {
       "title": "❌ プレイリストが空です",
       "description": "このプレイリストには曲が含まれていません。"
     },
-    
     "playlist_added": {
       "title": "📋 YouTubeプレイリストを追加しました",
       "songs_count": "📊 曲数",
@@ -66,16 +59,15 @@
       "more_songs": "... 他 {count} 曲",
       "requester": "リクエスト者: {name}"
     },
-    
     "play": {
       "title": "🎵 キューに追加しました",
       "now_playing": "🎶 再生中",
       "searching": "🔍 検索中: `{query}`",
       "no_results": "❌ 検索結果が見つかりませんでした: `{query}`",
       "select_track": "再生するトラックを選択してください：",
-      "search_results": "🔍 YouTube検索結果",
+      "search_results": "🔍 {source} 検索結果",
       "search_error": "YouTube検索中にエラーが発生しました。",
-      "youtube_only": "このBotはYouTubeリンクのみサポートしています。",
+      "youtube_only": "YouTube、Spotify、Apple Music、SoundCloud のリンクのみ対応しています。",
       "load_failed": "YouTubeリンクの読み込みに失敗しました。",
       "added": "**{title}** をキューに追加しました。",
       "playlist_added": "📋 プレイリストから {count} 曲をキューに追加しました: **{name}**",
@@ -86,25 +78,23 @@
       "queue_position": "キューの順番",
       "source": "🎵 ソース",
       "requester": "リクエスト者: {name}",
-      "select_footer": "以下から曲を選択してください"
+      "select_footer": "以下から曲を選択してください",
+      "select_timeout": "下のメニューから曲を選んでください。1 分以内に選択しないと自動的に削除されます。"
     },
-    
     "pause": {
       "success": "⏸️ 現在のトラックを一時停止しました。",
       "already_paused": "⏸️ すでに一時停止されています。",
       "resumed": "▶️ 再生を再開しました。"
     },
-    
     "resume": {
       "not_paused": "❌ 音楽は一時停止されていません。"
     },
-    
     "skip": {
       "success": "⏭️ **{title}** をスキップしました。",
       "no_next": "キュー内に次のトラックはありません。",
       "skipped_by": "スキップしたユーザー:",
       "vote_title": "⏭️ スキップ投票",
-      "vote_description": "ボイスチャンネルには現在 {count} 名のメンバーがいます。スキップするには最低 {required} 票が必要です。\n下のボタンから投票してください。",
+      "vote_description": "ボイスチャンネルには現在 {count} 人がいます。賛成が**過半数（{required} 票）**に達するとスキップされます。\n投票の開始者は自動的に賛成票としてカウントされ、リクエストした本人が「賛成」を押すと即座にスキップされます。",
       "vote_status_title": "📊 投票状況",
       "vote_yes": "はい",
       "vote_no": "いいえ",
@@ -113,14 +103,14 @@
       "vote_closed": "投票はすでに終了しています。",
       "vote_passed": "✅ 投票が可決されました。**{title}** をスキップします。",
       "vote_failed": "❌ 投票が否決されたため、トラックの再生を継続します。",
-      "vote_timeout": "⌛ 投票時間が終了しました。トラックの再生を継続します。"
+      "vote_timeout": "⌛ 投票時間が終了しました。トラックの再生を継続します。",
+      "vote_ends": "⌛ 投票終了",
+      "vote_track_changed": "⏭️ 楽曲がすでに変わったため、この投票は取り消されました。"
     },
-    
     "stop": {
       "success": "⏹️ 再生を停止し、キューをクリアしました。",
       "left_voice": "👋 ボイスチャンネルから退出しました。"
     },
-    
     "queue": {
       "title": "📋 音楽キュー",
       "now_playing": "**再生中:**",
@@ -130,7 +120,6 @@
       "total_tracks": "合計: {count} 曲 | 総再生時間: {duration}",
       "track_line": "`{num}.` [{title}]({url}) `[{duration}]` - {requester}"
     },
-    
     "nowplaying": {
       "title": "🎵 再生中",
       "now_playing": "🎵 再生中",
@@ -151,7 +140,6 @@
       "loop_track": "1曲ループ",
       "loop_queue": "全曲ループ"
     },
-    
     "volume": {
       "title": "🔊 音量設定",
       "changed": "{icon} 音量を **{volume}%** に設定しました。",
@@ -160,7 +148,6 @@
       "invalid_desc": "音量は0から100の間で設定してください。",
       "no_player": "❌ アクティブなプレイヤーがありません。"
     },
-    
     "loop": {
       "title": "🔁 ループモードを変更しました",
       "off": "🔁 ループモードを無効にしました。",
@@ -172,7 +159,6 @@
       "invalid": "❌ 無効なループモードです。off, track, queue のいずれかを使用してください。",
       "no_player": "❌ アクティブなプレイヤーがありません。"
     },
-    
     "shuffle": {
       "title": "🔀 シャッフルモード",
       "success": "🔀 キュー内の {count} 曲をシャッフルしました。",
@@ -180,7 +166,6 @@
       "disabled": "シャッフル: **無効**",
       "empty": "❌ キューは空です。"
     },
-    
     "disconnect": {
       "title": "👋 切断しました",
       "success": "Botはボイスチャンネルから退出し、キューをクリアしました。",
@@ -188,7 +173,6 @@
       "no_permission": "❌ 権限が不足しています。",
       "same_channel_required": "同じボイスチャンネルにいる必要があります。"
     },
-    
     "musicnode": {
       "title": "🎵 Lavalinkノードステータス",
       "not_initialized": "❌ Lavalinkが初期化されていません",
@@ -215,24 +199,20 @@
       "quality_fair": "🟠 普通",
       "quality_poor": "🔴 悪い"
     },
-    
     "remove": {
       "success": "🗑️ キューから **{title}** を削除しました。",
       "invalid": "❌ 無効なトラック番号です。",
       "empty": "❌ キューは空です。"
     },
-    
     "clear": {
       "success": "🗑️ キューから {count} 曲を削除しました。",
       "empty": "❌ キューはすでに空です。"
     },
-    
     "seek": {
       "success": "⏩ {time} にシークしました。",
       "invalid": "❌ 無効な時間形式です。MM:SS または秒数を使用してください。",
       "out_of_range": "❌ 指定した時間がトラックの長さを超えています。"
     },
-    
     "lyrics": {
       "title": "📜 歌詞",
       "searching": "🔍 歌詞を検索中...",
@@ -249,7 +229,6 @@
     "list_empty": "保存されたプレイリストはありません。",
     "already_exists": "❌ プレイリスト **{name}** はすでに存在します。"
   },
-  
   "admin": {
     "prefix_changed": "✅ コマンドプレフィックスを `{prefix}` に変更しました。",
     "settings_title": "⚙️ Bot設定",
@@ -332,7 +311,6 @@
       "remove_fail": "解除中にエラーが発生しました。後でもう一度試してください。"
     }
   },
-  
   "utils": {
     "ping": {
       "title": "🏓 ポン！",
@@ -466,7 +444,6 @@
     "list_empty": "プレミアムが有効なサーバーはありません。",
     "listed": "プレミアム有効サーバー: {guilds}"
   },
-  
   "events": {
     "joined_voice": "👋 **{channel}** に参加しました。",
     "left_voice": "👋 ボイスチャンネルから退出しました。",
@@ -479,7 +456,6 @@
     "track_start": "▶️ 再生中: **{title}**",
     "track_end": "再生終了: **{title}**"
   },
-  
   "errors": {
     "generic": "❌ リクエスト処理中にエラーが発生しました。",
     "lavalink_not_ready": "❌ 音楽システムが準備できていません。後でもう一度試してください。",
@@ -487,7 +463,6 @@
     "voice_connection_failed": "❌ ボイスチャンネルへの接続に失敗しました。",
     "insufficient_permissions": "❌ ボイスチャンネルに参加・発言する権限がありません。"
   },
-  
   "panel": {
     "no_music": "🎵 音楽は再生されていません",
     "no_music_desc": "`/play` で曲を再生してください！",
@@ -514,6 +489,21 @@
     "loop_queue_enabled": "🔁 全曲ループ有効",
     "no_queue": "❌ キューに曲がありません",
     "shuffled": "🔀 {count} 曲をシャッフルしました",
-    "operation_failed": "❌ 操作失敗"
+    "operation_failed": "❌ 操作失敗",
+    "btn_loop": "ループ",
+    "btn_pause": "一時停止",
+    "btn_resume": "再開",
+    "btn_shuffle": "シャッフル",
+    "btn_skip": "スキップ",
+    "btn_stop": "停止",
+    "by_author": "👤 **{author}**",
+    "footer": "Ghost Music · ソース：{source}",
+    "loop_mode": "🔁 ループモード",
+    "loop_none": "➡️ オフ",
+    "next_none": "キューに次の曲はありません。`/play` で追加しましょう！",
+    "next_up": "⏭️ 次の曲",
+    "requester_title": "🙋 リクエスト者",
+    "status_paused": "⏸️ 一時停止中 · {source}",
+    "status_playing": "▶️ 再生中 · {source}"
   }
 }
