@@ -1,7 +1,6 @@
 {
   "_language_name": "日本語",
   "_language_emoji": "🇯🇵",
-  
   "common": {
     "error": "❌ エラー",
     "success": "✅ 成功",
@@ -16,7 +15,6 @@
     "invalid_input": "無効な入力です。",
     "command_cooldown": "コマンドはクールダウン中です。あと {time} 秒お待ちください。"
   },
-  
   "language": {
     "title": "🌐 言語設定",
     "current": "現在の言語：**{language}**",
@@ -30,7 +28,6 @@
     "switch_to": "{language} に切り替える",
     "select_placeholder": "言語を選択してください / Select your language..."
   },
-  
   "music": {
     "blacklisted": {
       "title": "❌ あなたはブラックリストに登録されています",
@@ -38,23 +35,19 @@
       "reason": "理由",
       "footer": "ご不明な点がある場合は、サーバー管理者にお問い合わせください"
     },
-    
     "queue_ended": {
       "title": "🎵 再生終了",
       "description": "すべての楽曲の再生が終了したため、ボットはボイスチャンネルから退出しました。",
       "footer": "🔧 Ghost Music ボットをご利用いただきありがとうございました"
     },
-    
     "error": {
       "title": "❌ エラー発生",
       "description": "{error}"
     },
-    
     "playlist_empty": {
       "title": "❌ プレイリストが空です",
       "description": "このプレイリストには楽曲が含まれていません"
     },
-    
     "playlist_added": {
       "title": "📋 YouTube プレイリストを追加しました",
       "songs_count": "📊 曲数",
@@ -66,16 +59,15 @@
       "more_songs": "... ほか {count} 曲",
       "requester": "リクエスト者: {name}"
     },
-    
     "play": {
       "title": "🎵 再生キューに追加されました",
       "now_playing": "🎶 現在再生中",
       "searching": "🔍 検索中：`{query}`",
       "no_results": "❌ 結果が見つかりませんでした：`{query}`",
       "select_track": "再生する楽曲を選択してください：",
-      "search_results": "🔍 YouTube 検索結果",
+      "search_results": "🔍 {source} 検索結果",
       "search_error": "YouTube での検索中にエラーが発生しました。",
-      "youtube_only": "このボットは YouTube リンクのみをサポートしています。",
+      "youtube_only": "YouTube、Spotify、Apple Music、SoundCloud のリンクのみ対応しています。",
       "load_failed": "YouTube リンクを読み込めませんでした。",
       "added": "**{title}** を再生キューに追加しました",
       "playlist_added": "📋 プレイリスト **{name}** から {count} 曲を追加しました",
@@ -86,25 +78,23 @@
       "queue_position": "キューの位置",
       "source": "🎵 ソース",
       "requester": "リクエスト者: {name}",
-      "select_footer": "以下から楽曲を選択してください"
+      "select_footer": "以下から楽曲を選択してください",
+      "select_timeout": "下のメニューから曲を選んでください。1 分以内に選択しないと自動的に削除されます。"
     },
-    
     "pause": {
       "success": "⏸️ 現在再生中の楽曲を一時停止しました。",
       "already_paused": "⏸️ すでに一時停止状態です。",
       "resumed": "▶️ 再生を再開しました。"
     },
-    
     "resume": {
       "not_paused": "❌ 音楽は一時停止されていません。"
     },
-    
     "skip": {
       "success": "⏭️ **{title}** をスキップしました",
       "no_next": "再生キューに次の楽曲がありません。",
       "skipped_by": "スキップしたユーザー",
       "vote_title": "⏭️ スキップ投票",
-      "vote_description": "現在ボイスチャンネルに {count} 人のユーザーがいます。スキップするには少なくとも {required} 票の賛成が必要です。\n下のボタンから投票してください。",
+      "vote_description": "ボイスチャンネルには現在 {count} 人がいます。賛成が**過半数（{required} 票）**に達するとスキップされます。\n投票の開始者は自動的に賛成票としてカウントされ、リクエストした本人が「賛成」を押すと即座にスキップされます。",
       "vote_status_title": "📊 投票状況",
       "vote_yes": "賛成",
       "vote_no": "反対",
@@ -113,14 +103,14 @@
       "vote_closed": "投票は終了しました。",
       "vote_passed": "✅ 投票が可決されたため、**{title}** をスキップしました",
       "vote_failed": "❌ 投票が否決されたため、楽曲の再生を継続します。",
-      "vote_timeout": "⌛ 投票がタイムアウトしたため、楽曲の再生を継続します。"
+      "vote_timeout": "⌛ 投票がタイムアウトしたため、楽曲の再生を継続します。",
+      "vote_ends": "⌛ 投票終了",
+      "vote_track_changed": "⏭️ 楽曲がすでに変わったため、この投票は取り消されました。"
     },
-    
     "stop": {
       "success": "⏹️ 再生を停止し、キューをクリアしました。",
       "left_voice": "👋 ボイスチャンネルから退出しました。"
     },
-    
     "queue": {
       "title": "📋 再生キュー",
       "now_playing": "**現在再生中：**",
@@ -130,7 +120,6 @@
       "total_tracks": "合計 {count} 曲 | 総再生時間：{duration}",
       "track_line": "`{num}.` [{title}]({url}) `[{duration}]` - {requester}"
     },
-    
     "nowplaying": {
       "title": "🎵 現在再生中",
       "now_playing": "🎵 現在再生中",
@@ -151,7 +140,6 @@
       "loop_track": "1曲ループ",
       "loop_queue": "キュー全曲ループ"
     },
-    
     "volume": {
       "title": "🔊 音量コントロール",
       "changed": "{icon} 音量を **{volume}%** に設定しました",
@@ -160,7 +148,6 @@
       "invalid_desc": "音量は 0 から 100 の間で指定してください",
       "no_player": "❌ アクティブなプレイヤーがありません"
     },
-    
     "loop": {
       "title": "🔁 ループモードが変更されました",
       "off": "🔁 ループモードをオフにしました。",
@@ -172,7 +159,6 @@
       "invalid": "❌ 無効なループモードです。使用可能：off、track、または queue。",
       "no_player": "❌ アクティブなプレイヤーがありません"
     },
-    
     "shuffle": {
       "title": "🔀 シャッフルモード",
       "success": "🔀 キュー内の {count} 曲をランダムに並び替えました。",
@@ -180,7 +166,6 @@
       "disabled": "シャッフル再生：**OFF**",
       "empty": "❌ 再生キューが空です。"
     },
-    
     "disconnect": {
       "title": "👋 ボイスチャンネルから退出しました",
       "success": "ボットはボイスチャンネルから退出し、キューをクリアしました",
@@ -188,7 +173,6 @@
       "no_permission": "❌ 権限が不足しています",
       "same_channel_required": "同じボイスチャンネルにいる必要があります"
     },
-    
     "musicnode": {
       "title": "🎵 Lavalink ノードの状態",
       "not_initialized": "❌ Lavalink が初期化されていません",
@@ -215,24 +199,20 @@
       "quality_fair": "🟠 普通",
       "quality_poor": "🔴 低下"
     },
-    
     "remove": {
       "success": "🗑️ キューから **{title}** を削除しました。",
       "invalid": "❌ 無効な楽曲番号です。",
       "empty": "❌ 再生キューが空です。"
     },
-    
     "clear": {
       "success": "🗑️ キューから {count} 曲を消去しました。",
       "empty": "❌ 再生キューはすでに空です。"
     },
-    
     "seek": {
       "success": "⏩ {time} へ移動しました",
       "invalid": "❌ 無効な時間形式です。使用例：MM:SS または秒数。",
       "out_of_range": "❌ 指定された時間が楽曲の長さを超えています。"
     },
-    
     "lyrics": {
       "title": "📜 歌詞",
       "searching": "🔍 歌詞を検索中...",
@@ -249,7 +229,6 @@
     "list_empty": "保存されているプレイリストはありません。",
     "already_exists": "❌ プレイリスト **{name}** はすでに存在します。"
   },
-  
   "admin": {
     "prefix_changed": "✅ コマンドプレフィックスを `{prefix}` に変更しました",
     "settings_title": "⚙️ ボット設定",
@@ -332,7 +311,6 @@
       "remove_fail": "アナウンスチャンネルの設定削除中にエラーが発生しました。しばらくしてからもう一度お試しください。"
     }
   },
-  
   "utils": {
     "ping": {
       "title": "🏓 Pong!",
@@ -443,7 +421,6 @@
       "footer": "当音楽ボットをお選びいただきありがとうございます！🎶"
     }
   },
-  
   "events": {
     "joined_voice": "👋 **{channel}** に参加しました",
     "left_voice": "👋 ボイスチャンネルから退出しました。",
@@ -456,7 +433,6 @@
     "track_start": "▶️ 現在再生中：**{title}**",
     "track_end": "再生終了：**{title}**"
   },
-  
   "errors": {
     "generic": "❌ リクエストの処理中にエラーが発生しました。",
     "lavalink_not_ready": "❌ 音楽システムがまだ準備できていません。しばらくしてからもう一度お試しください。",
@@ -464,7 +440,6 @@
     "voice_connection_failed": "❌ ボイスチャンネルに接続できませんでした。",
     "insufficient_permissions": "❌ ボットにこのボイスチャンネルへの参加/発言権限がありません。"
   },
-  
   "panel": {
     "no_music": "🎵 再生中の音楽はありません",
     "no_music_desc": "`/play` を使って音楽を再生しましょう！",
@@ -491,6 +466,44 @@
     "loop_queue_enabled": "🔁 キュー全曲ループを有効にしました",
     "no_queue": "❌ キューに楽曲がありません",
     "shuffled": "🔀 {count} 曲をシャッフルしました",
-    "operation_failed": "❌ 操作失敗"
+    "operation_failed": "❌ 操作失敗",
+    "status_playing": "▶️ 再生中 · {source}",
+    "status_paused": "⏸️ 一時停止中 · {source}",
+    "by_author": "👤 **{author}**",
+    "loop_mode": "🔁 ループモード",
+    "loop_none": "➡️ オフ",
+    "requester_title": "🙋 リクエスト者",
+    "next_up": "⏭️ 次の曲",
+    "next_none": "キューに次の曲はありません。`/play` で追加しましょう！",
+    "footer": "Ghost Music · ソース：{source}",
+    "btn_pause": "一時停止",
+    "btn_resume": "再開",
+    "btn_skip": "スキップ",
+    "btn_stop": "停止",
+    "btn_loop": "ループ",
+    "btn_shuffle": "シャッフル"
+  },
+  "premium": {
+    "invalid_timeout": "❌ タイムアウトは 0 秒以上で指定してください。",
+    "must_be_in_server": "❌ このコマンドはサーバー内で使用してください。",
+    "must_be_premium": "❌ このサーバーでは Premium が有効になっていません。",
+    "no_settings": "このサーバーには Premium 設定がありません。",
+    "only_owner": "❌ このコマンドはボットのオーナーのみ使用できます。",
+    "set_neverleave": "✅ サーバー {guild} の never_leave を `{value}` に設定しました",
+    "set_timeout": "✅ サーバー {guild} のタイムアウトを `{seconds}` 秒に設定しました",
+    "settings": {
+      "title": "Premium 設定"
+    },
+    "settings_only_admin": "❌ この設定を変更するには、サーバーの管理者またはオーナーである必要があります。",
+    "status": "`{guild}` の Premium 設定：{settings}",
+    "use_subcommand": "サブコマンドを指定してください。"
+  },
+  "premium_admin": {
+    "grant_success": "✅ サーバー ID {guild} に Premium を付与しました",
+    "invalid_guild": "❌ 無効なサーバー ID です。",
+    "list_empty": "Premium が有効なサーバーはありません。",
+    "listed": "Premium が有効なサーバー：{guilds}",
+    "revoke_success": "✅ サーバー ID {guild} の Premium を取り消しました",
+    "settings_saved": "✅ Premium 設定を保存しました：{settings}（サーバー：{guild}）"
   }
 }
